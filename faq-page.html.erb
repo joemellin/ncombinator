@@ -1,479 +1,160 @@
-<body id ="add-a-page-specific-id">
+<% @body_id = "add-a-page-specific-id" %>
 
-  <!--START Main header -->
-  <header>
+<!-- START .row-->
+<div class ="row gutter-width-2">
 
-    <!--START #top-bar .container -->
-    <aside id = "top-bar" class = "hidden container">
-      <!--START .content -->
-      <div class="content">
-        <!--START .row -->
-        <div class="row gutter-width-2">
+  <!-- START GRID COLUMN -->
+  <div class="c-11-16">
+    <div class="g">
 
-          <!-- START GRID COLUMN-->
-          <section class="c-6-12">
 
-            <!-- START .about-us widget-->
-            <div class="g widget">
-              <h3 class="title ">Feel free to add any content you want inside this box</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
-              <input class="search animate" placeholder = "Type and hit enter" >
-            </div>
-            <!-- END/ .about-us widget-->
+      <p  class="title-format-3 f-17 divider-bottom">Click (+) to read more about the topic. Lorem ipsum dol s ent montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
 
-          </section>
-          <!-- END/ GRID COLUMN-->
 
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
+      <!-- START expandable section-->
+      <section class ="expandable  default-expanded" >
 
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Links list</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
+        <!-- START .always-visible-->
+        <div class="always-visible  h1">
 
-          </section>
-          <!-- END/ GRID COLUMN-->
-
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
-
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Explorer more</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
-
-          </section>
-          <!-- END/ GRID COLUMN-->
+          <h3 class="h1 title-format-2">You can make it expanded  when it loads.</h3>
+          <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
 
         </div>
-        <!--END/ .row -->
-      </div>
-      <!--END/ .content -->
-    </aside>
-    <!--END/  #top-bar .hidden .container-->
+        <!-- END/ .always-visible-->
+
+        <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
+        <div class="dropdown">
+
+          <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
+
+        </div>
+        <!--END/ dropdown -->
+
+      </section>
+      <!-- END/ expandable section-->
 
 
-    <!--START .container-->
-    <div class = "container" >
+      <!-- START expandable section-->
+      <section class ="expandable" >
 
-      <!--#top-bar toggle button for small screens (visible on small screens) -->
-      <div id = "ss-top" class="ss-only" ><span class="skin right" data-toggle ="#top-bar"><a href="#">+</a> </span></div>
+        <!-- START .always-visible-->
+        <div class="always-visible  h1">
 
-      <!--START #header-logo -->
-      <div id="header-logo">
-        <a href="./">
-          <img src="images/sample-content/logo.png" alt="GearBox HTML"/>
-        </a>
-      </div>
-      <!--END/ #header-logo -->
+          <h3 class="h1 title-format-2">Lorem ipsum dolor sit amet, co us rutrum.</h3>
+          <span class="h4 sub-title">You can use this page template for whatever you want.</span>
 
-      <!--START #navigation -->
-      <nav id="navigation">
-        <ul>
+        </div>
+        <!-- END/ .always-visible-->
 
-          <!--START menu item -->
-          <li>
-            <a href="./">Home</a>
-          </li>
-          <!--END/ menu item -->
+        <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
+        <div class="dropdown">
 
-          <!--START menu item -->
-          <li class="current">
-            <a href="#">Pages</a>
+          <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
 
-            <!--START dropdown level one -->
-            <ul>
+        </div>
+        <!--END/ dropdown -->
 
-              <li><a href="#">Home suggestions</a>
-                <ul>
-                  <li><a href="home-suggestion-2.html">Home suggestion 2</a></li>
-                  <li><a href="home-suggestion-3.html">Home suggestion 3</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
+      </section>
+      <!-- END/ expandable section-->
 
-              <li class="current"><a href="#">More pages</a>
-                <ul>
-                  <li><a href="layout-nav+content+sidebar.html">nav + content + sidebar</a></li>
-                  <li><a href="portfolio-single.html">Portfolio single</a></li>
-                  <li class="current"><a href="faq-page.html">FAQ page</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
 
-              <li><a href="#">Galleries</a>
-                <ul>
-                  <li><a href="gallery-two-col.html">gallery two col</a></li>
-                  <li><a href="gallery-three-col.html">gallery three col</a></li>
-                  <li><a href="gallery-four-col.html">gallery four col</a></li>
-                  <li><a href="gallery-four-col-style-1.html">gallery four col (style 1)</a></li>
-                  <li><a href="gallery-three-col-style-2.html">gallery three col (style 2)</a></li>
-                </ul>
-              </li>
+      <!-- START expandable section-->
+      <section class ="expandable" >
 
-              <li><a href="blog-posts.html">Blog posts</a></li>
+        <!-- START .always-visible-->
+        <div class="always-visible  h1">
 
-              <li><a href="single-blog-post.html">Blog single post </a></li>
+          <h3 class="h1 title-format-2">Lorem ipsum dolor sit amet, co us rutrum.</h3>
+          <span class="h4 sub-title">You can use this page template for whatever you want.</span>
 
-              <li><a href="contact-page.php">Contact page</a></li>
+        </div>
+        <!-- END/ .always-visible-->
 
-              <li><a href="demo-pricing-tables.html">Pricing tables</a></li>
+        <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
+        <div class="dropdown">
 
-              <li><a href="404-not-found.html">404 Not found</a></li>
+          <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
 
-              <li><a href="#">A Lot more to come...</a></li>
+        </div>
+        <!--END/ dropdown -->
 
-            </ul>
-            <!--END/ dropdown level one -->
+      </section>
+      <!-- END/ expandable section-->
 
-          </li>
-          <!--END/ menu item -->
 
-          <!--START menu item -->
-          <li>
-            <a href="demo-typography.html">Typography</a>
-          </li>
-          <!--END/ menu item -->
+      <!-- START expandable section-->
+      <section class ="expandable" >
 
-          <!--START menu item -->
-          <li>
-            <a href="demo-grid.html">Grid</a>
-          </li>
-          <!--END/ menu item -->
+        <!-- START .always-visible-->
+        <div class="always-visible  h1">
 
-          <!--START #top-bar toggle button-->
-          <li data-toggle ="#top-bar" class="skin">
-            <a href="#top-bar">+</a>
-          </li>
-          <!--END/ #top-bar toggle button -->
+          <h3 class="h1 title-format-2">Lacinia pulvinar eros sollicitudin.</h3>
+          <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
 
-        </ul>
-      </nav>
-      <!--END/ #navigation-->
+        </div>
+        <!-- END/ .always-visible-->
+
+        <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
+        <div class="dropdown">
+
+          <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
+
+        </div>
+        <!--END/ dropdown -->
+
+      </section>
+      <!-- END/ expandable section-->
+
+
+      <!-- START expandable section-->
+      <section class ="expandable" >
+
+        <!-- START .always-visible-->
+        <div class="always-visible  h1">
+
+          <h3 class="h1 title-format-2">Skins and fonts.</h3>
+          <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
+
+        </div>
+        <!-- END/ .always-visible-->
+
+        <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
+        <div class="dropdown">
+
+          <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
+
+        </div>
+        <!--END/ dropdown -->
+
+      </section>
+      <!-- END/ expandable section-->
+
 
     </div>
-    <!--END/ .container -->
-
-
-    <!--START .container-->
-    <section class = "container">
-
-      <!--START #page-header-->
-      <div id ="page-header">
-
-        <!-- START page title Note : you can also use h1 , h2 etc. -  make sure you add .title and .sub -->
-        <h2 class=" title">FAQ</h2>
-        <span class="sub">or anything you want</span>
-        <!-- END/ page title -->
-
-      </div>
-      <!--END/ #page-header-->
-
-    </section>
-    <!--END/ .container -->
-
-
-  </header>
-  <!--END/ Main header -->
-
-
-  <!--START #page -->
-  <div id="page">
-
-    <!-- START noscript alert -->
-    <noscript>
-      <div  class="alert">
-        <h5 class="title">Javascript is disabled in your browser :( </h5>
-        Javascript is required to work this site properly.
-      </div>
-    </noscript>
-    <!-- END/ noscript alert -->
-
-
-    <!-- START .row-->
-    <div class ="row gutter-width-2">
-
-      <!-- START GRID COLUMN -->
-      <div class="c-11-16">
-        <div class="g">
-
-
-          <p  class="title-format-3 f-17 divider-bottom">Click (+) to read more about the topic. Lorem ipsum dol s ent montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-
-          <!-- START expandable section-->
-          <section class ="expandable  default-expanded" >
-
-            <!-- START .always-visible-->
-            <div class="always-visible  h1">
-
-              <h3 class="h1 title-format-2">You can make it expanded  when it loads.</h3>
-              <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
-
-            </div>
-            <!-- END/ .always-visible-->
-
-            <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
-            <div class="dropdown">
-
-              <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-            </div>
-            <!--END/ dropdown -->
-
-          </section>
-          <!-- END/ expandable section-->
-
-
-          <!-- START expandable section-->
-          <section class ="expandable" >
-
-            <!-- START .always-visible-->
-            <div class="always-visible  h1">
-
-              <h3 class="h1 title-format-2">Lorem ipsum dolor sit amet, co us rutrum.</h3>
-              <span class="h4 sub-title">You can use this page template for whatever you want.</span>
-
-            </div>
-            <!-- END/ .always-visible-->
-
-            <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
-            <div class="dropdown">
-
-              <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-            </div>
-            <!--END/ dropdown -->
-
-          </section>
-          <!-- END/ expandable section-->
-
-
-          <!-- START expandable section-->
-          <section class ="expandable" >
-
-            <!-- START .always-visible-->
-            <div class="always-visible  h1">
-
-              <h3 class="h1 title-format-2">Lorem ipsum dolor sit amet, co us rutrum.</h3>
-              <span class="h4 sub-title">You can use this page template for whatever you want.</span>
-
-            </div>
-            <!-- END/ .always-visible-->
-
-            <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
-            <div class="dropdown">
-
-              <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-            </div>
-            <!--END/ dropdown -->
-
-          </section>
-          <!-- END/ expandable section-->
-
-
-          <!-- START expandable section-->
-          <section class ="expandable" >
-
-            <!-- START .always-visible-->
-            <div class="always-visible  h1">
-
-              <h3 class="h1 title-format-2">Lacinia pulvinar eros sollicitudin.</h3>
-              <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
-
-            </div>
-            <!-- END/ .always-visible-->
-
-            <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
-            <div class="dropdown">
-
-              <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-            </div>
-            <!--END/ dropdown -->
-
-          </section>
-          <!-- END/ expandable section-->
-
-
-          <!-- START expandable section-->
-          <section class ="expandable" >
-
-            <!-- START .always-visible-->
-            <div class="always-visible  h1">
-
-              <h3 class="h1 title-format-2">Skins and fonts.</h3>
-              <span class="h4 sub-title">Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci.</span>
-
-            </div>
-            <!-- END/ .always-visible-->
-
-            <!--.dropdown -  by clicking the + button , you can reveal the content bellow -->
-            <div class="dropdown">
-
-              <p>Lorem ipsum dolor sit amet, co us rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-            </div>
-            <!--END/ dropdown -->
-
-          </section>
-          <!-- END/ expandable section-->
-
-
-        </div>
-      </div>
-      <!-- END/ GRID COLUMN -->
-
-      <!-- START GRID COLUMN .sidebar-->
-      <div class="sidebar c-5-16">
-        <div class="g">
-
-          <p class="title-format-3 gray-text m-0 ">Let's talk -</p>
-          <p class=" f-20 title-format-2 divider-bottom m-b-1">Call us 123-456-7890</p>
-
-          <h2 class="title-format-1 m-t">How to reach us</h2>
-          <address>
-            My Company, LLC</br>
-            000 whatever St.,</br>
-            You Know What , CA 00000
-          </address>
-
-          <a href="#" class="skin button">Get directions</a>
-
-        </div>
-      </div>
-      <!-- END/ GRID COLUMN .sidebar-->
-
-    </div>
-    <!-- END/ .row-->
-
-
   </div>
-  <!-- END/ #page -->
+  <!-- END/ GRID COLUMN -->
 
+  <!-- START GRID COLUMN .sidebar-->
+  <div class="sidebar c-5-16">
+    <div class="g">
 
+      <p class="title-format-3 gray-text m-0 ">Let's talk -</p>
+      <p class=" f-20 title-format-2 divider-bottom m-b-1">Call us 123-456-7890</p>
 
-  <!-- START global footer -->
-  <footer>
-    <section class = "container" >
+      <h2 class="title-format-1 m-t">How to reach us</h2>
+      <address>
+        My Company, LLC</br>
+        000 whatever St.,</br>
+        You Know What , CA 00000
+      </address>
 
-      <!-- START .row-->
-      <div class ="row gutter-width-2">
+      <a href="#" class="skin button">Get directions</a>
 
-        <!-- START GRID COLUMN-->
-        <section class ="c-5-16">
-          <!-- START .about-us widget-->
-          <div class ="g about-us widget">
+    </div>
+  </div>
+  <!-- END/ GRID COLUMN .sidebar-->
 
-            <h3 class="title ">About us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
+</div>
+<!-- END/ .row-->
 
-            <section>
-              <h4 class="title">Stay connected..</h4>
-
-              <!-- START .social-connect-->
-              <ul class="social-connect">
-                <li><a href="#" data-tooltip ="Like us on facebook"><img src ="images/content/social-icons/facebook.png" alt="facebook"/></a></li>
-                <li><a href="#" data-tooltip ="Subscribe to RSS feed"><img src ="images/content/social-icons/rss.png" alt="RSS"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on twitter"><img src ="images/content/social-icons/twitter.png" alt="twitter"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Dribbble"><img src ="images/content/social-icons/dribbble.png" alt="dribbble"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Flickr"><img src ="images/content/social-icons/Flickr.png" alt="Flickr"/></a></li>
-              </ul>
-              <!-- END/ .social-connect-->
-
-            </section>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </section>
-        <!-- END/ GRID COLUMN-->
-
-        <!-- START GRID COLUMN-->
-        <aside class ="c-6-16">
-          <!-- START .about-us widget-->
-          <div class ="g twitter widget">
-
-            <h3 class="title">Latest tweets</h3>
-            <div id = "twits">
-              Loading...
-            </div>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </aside>
-        <!-- END/ GRID COLUMN-->
-
-        <aside class="c-5-16">
-          <!-- START .flickr widget-->
-          <div class="g flickr widget animate-all">
-
-            <p class="title-format-3 gray-text f-13 m-0 ">talk to a real person</p>
-            <p class=" f-20 fontart-3 fontface-2 divider-bottom m-b-1">Call us 123-456-7890</p>
-
-            <h3 class="title"> newsletter</h3>
-            <p>Join our newsletter to get weekly updates on our nerw theme releases and theme updates</p>
-
-            <form>
-              <input placeholder="Enter your Email"> <button class="skin button">Sign up </button>
-            </form>
-
-          </div>
-          <!-- END/ .flickr widget-->
-        </aside>
-
-
-      </div>
-      <!-- END/ .row -->
-
-      <!-- START #copyright-note-->
-      <div class ="row" id ="copyright-note">
-
-        <!--START #footer-nav-->
-        <div  id ="footer-nav" class="semi-left uppercase">
-          <a href="./">Home</a> <a href="#">pages</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a>
-        </div>
-        <!--END/ #footer-nav-->
-
-        <!--Add your copyright here-->
-        <p>Copyright &copy; 2012 Your Company. All rights reserved.</p>
-
-      </div>
-      <!-- END/ #copyright-note -->
-
-
-    </section><!-- END/ container -->
-  </footer>
-  <!-- END/ global footer -->
-
-
-
-  <!-- START JS -->
-
-    <!-- jQuery Javascript Library-->
-    <script src="js/jquery.min.js"></script>
-
-    <!--10 JQuery plugins -concatenated - see the documentation for more info -->
-    <script src="js/essential.plugins.min.js"></script>
-
-    <!-- Custom js for GearBox HTML template-->
-    <script src="js/custom.js"></script>
-
-  <!-- END/ JS -->
-
-</body>

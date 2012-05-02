@@ -1,1097 +1,778 @@
-<body id ="add-a-page-specific-id">
+<% @body_id = "add-a-page-specific-id" %>
 
-  <!--START Main header -->
-  <header>
+<p class="title-format-3 f-20 no-link-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. </p>
 
-    <!--START #top-bar .container -->
-    <aside id = "top-bar" class = "hidden container">
-      <!--START .content -->
-      <div class="content">
-        <!--START .row -->
-        <div class="row gutter-width-2">
+<hr>
 
-          <!-- START GRID COLUMN-->
-          <section class="c-6-12">
+<section class="row gutter-width-2">
+  <div class="c-2-5">
 
-            <!-- START .about-us widget-->
-            <div class="g widget">
-              <h3 class="title ">Feel free to add any content you want inside this box</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
-              <input class="search animate" placeholder = "Type and hit enter" >
-            </div>
-            <!-- END/ .about-us widget-->
+    <div class="g removable notes">
+      <h2 class="title">Notes </h2>
+      <ul class="check list">
+        <li>Every element you see here is fully customizable.</li>
+        <li>By just adding/removing preset CSS classes , you can make many awesome things.</li>
+        <li>We've included Many useful code snippets in the documentation.</li>
+        <li>Don't forget to try different skins.</li>
+        <li>And ,did you know that this note is removable ?. To make any element removable like this one, just add <code>.removable</code> class to the element!</li>
+      </ul>
+    </div>
 
-          </section>
-          <!-- END/ GRID COLUMN-->
-
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
-
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Links list</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
-
-          </section>
-          <!-- END/ GRID COLUMN-->
-
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
-
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Explorer more</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
-
-          </section>
-          <!-- END/ GRID COLUMN-->
-
-        </div>
-        <!--END/ .row -->
-      </div>
-      <!--END/ .content -->
-    </aside>
-    <!--END/  #top-bar .hidden .container-->
-
-
-    <!--START .container-->
-    <div class = "container" >
-
-      <!--#top-bar toggle button for small screens (visible on small screens) -->
-      <div id = "ss-top" class="ss-only" ><span class="skin right" data-toggle ="#top-bar"><a href="#">+</a> </span></div>
-
-      <!--START #header-logo -->
-      <div id="header-logo">
-        <a href="./">
-          <img src="images/sample-content/logo.png" alt="GearBox HTML"/>
-        </a>
-      </div>
-      <!--END/ #header-logo -->
-
-      <!--START #navigation -->
-      <nav id="navigation">
-        <ul>
-
-          <!--START menu item -->
-          <li>
-            <a href="./">Home</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li>
-            <a href="#">Pages</a>
-
-            <!--START dropdown level one -->
-            <ul>
-
-              <li><a href="#">Home suggestions</a>
-                <ul>
-                  <li><a href="home-suggestion-2.html">Home suggestion 2</a></li>
-                  <li><a href="home-suggestion-3.html">Home suggestion 3</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">More pages</a>
-                <ul>
-                  <li><a href="layout-nav+content+sidebar.html">nav + content + sidebar</a></li>
-                  <li><a href="portfolio-single.html">Portfolio single</a></li>
-                  <li><a href="faq-page.html">FAQ page</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">Galleries</a>
-                <ul>
-                  <li><a href="gallery-two-col.html">gallery two col</a></li>
-                  <li><a href="gallery-three-col.html">gallery three col</a></li>
-                  <li><a href="gallery-four-col.html">gallery four col</a></li>
-                  <li><a href="gallery-four-col-style-1.html">gallery four col (style 1)</a></li>
-                  <li><a href="gallery-three-col-style-2.html">gallery three col (style 2)</a></li>
-                </ul>
-              </li>
-
-              <li><a href="blog-posts.html">Blog posts</a></li>
-
-              <li><a href="single-blog-post.html">Blog single post </a></li>
-
-              <li><a href="contact-page.php">Contact page</a></li>
-
-              <li><a href="demo-pricing-tables.html">Pricing tables</a></li>
-
-              <li><a href="404-not-found.html">404 Not found</a></li>
-
-              <li><a href="#">A Lot more to come...</a></li>
-
-            </ul>
-            <!--END/ dropdown level one -->
-
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li class="current">
-            <a href="demo-typography.html">Typography</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li>
-            <a href="demo-grid.html">Grid</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START #top-bar toggle button-->
-          <li data-toggle ="#top-bar" class="skin">
-            <a href="#top-bar">+</a>
-          </li>
-          <!--END/ #top-bar toggle button -->
-
-        </ul>
-      </nav>
-      <!--END/ #navigation-->
+  </div>
+  <div class="c-3-5">
+    <div class="g mark-links">
+      <h2 class="title-format-2 h1">Try different title formats</h2>
+      <p class="title-format-3 gray-text f-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est velit, scelerisque in pellentesque at,   porttitor rhoncus. In pulvinar viverra neque et accumsan. </p>
 
     </div>
-    <!--END/ .container -->
+  </div>
 
+</section>
 
-    <!--START .container-->
-    <section class = "container">
+<!--START  DEMO-blockquote  -->
+<section>
+  <h2 class="section-title">Testimonials <span class="line-effect"></span></h2>
+  <div class="row gutter-width-2 m-b">
+    <div class ="c-6-12">
+      <div class ="g">
 
-      <!--START #page-header-->
-      <div id ="page-header">
-
-        <!-- START page title Note : you can also use h1 , h2 etc. -  make sure you add .title and .sub -->
-        <h2 class=" title">Typography</h2>
-        <span class="sub">and more...</span>
-        <!-- END/ page title -->
+        <blockquote>
+          <p>It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.</p>
+          <cite>&ndash;&nbsp;Steve Jobs</cite>
+        </blockquote>
 
       </div>
-      <!--END/ #page-header-->
+    </div>
 
-    </section>
-    <!--END/ .container -->
+    <div class ="c-6-12">
+      <div class ="g gray p-1 rounded">
 
+        <blockquote class="f-17">
+          <p>It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.</p>
+          <cite>&ndash;&nbsp;Steve Jobs</cite>
+        </blockquote>
 
-  </header>
-  <!--END/ Main header -->
-
-
-  <!--START #page -->
-  <div id="page">
-
-    <!-- START noscript alert -->
-    <noscript>
-      <div  class="alert">
-        <h5 class="title">Javascript is disabled in your browser :( </h5>
-        Javascript is required to work this site properly.
       </div>
-    </noscript>
-    <!-- END/ noscript alert -->
+    </div>
+
+  </div>
+</section>
+<!--END/  DEMO-blockquote -->
+
+<!--START  DEMO-lists -->
+<section>
+  <h2 class="section-title">Lists  <span class="line-effect"></span></h2>
+
+  <div class="row gutter-width-2 m-b">
+    <div class ="c-3-12">
+      <div class ="g">
+        <h2 class="title-format-3 gray-text">List items</h2>
+        <ul class="check list">
+          <li>List item</li>
+          <li>Lorem ipsum</li>
+          <li>Vivamus condimentum</li>
+          <li>Mauris diam</li>
+          <li>Aenean dapibus</li>
+          <li>Pulvinar eros</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class ="c-3-12">
+      <div class ="g">
+        <h2 class="title-format-3 gray-text">List items</h2>
+        <ul class="close list">
+          <li>List item</li>
+          <li>Lorem ipsum</li>
+          <li>Vivamus condimentum</li>
+          <li>Mauris diam</li>
+          <li>Aenean dapibus</li>
+          <li>Pulvinar eros</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class ="c-3-12">
+      <div class ="g">
+        <h2 class="title-format-3 gray-text">List items</h2>
+        <ul class="circle list">
+          <li>List item</li>
+          <li>Lorem ipsum</li>
+          <li>Vivamus condimentum</li>
+          <li>Mauris diam</li>
+          <li>Aenean dapibus</li>
+          <li>Pulvinar eros</li>
+        </ul>
+      </div>
+    </div>
 
 
-    <p class="title-format-3 f-20 no-link-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. </p>
+    <div class ="c-3-12">
+      <div class ="g">
+        <h2 class="title-format-3 gray-text">List items Mixed</h2>
+        <ul class="close list">
+          <li class="circle">Pulvinar eros</li>
+          <li class="check">Lorem ipsum</li>
+          <li class="check">List item</li>
+          <li >List item</li>
+          <li>List item</li>
+          <li>Lorem ipsum</li>
+        </ul>
+      </div>
+    </div>
 
-    <hr>
+  </div>
+</section>
+<!--END/  DEMO-lists -->
 
-    <section class="row gutter-width-2">
-      <div class="c-2-5">
 
-        <div class="g removable notes">
-          <h2 class="title">Notes </h2>
-          <ul class="check list">
-            <li>Every element you see here is fully customizable.</li>
-            <li>By just adding/removing preset CSS classes , you can make many awesome things.</li>
-            <li>We've included Many useful code snippets in the documentation.</li>
-            <li>Don't forget to try different skins.</li>
-            <li>And ,did you know that this note is removable ?. To make any element removable like this one, just add <code>.removable</code> class to the element!</li>
+<!--START  DEMO-Buttons -->
+<section>
+  <h2 class="section-title">Buttons - There're are many class combinations you can try... <span class="line-effect"></span></h2>
+  <section class="row gutter-width-1 m-t">
+    <div class ="c-4-12">
+      <div class ="g divider-left">
+
+            <!-- Buttons -->
+        <p>   <a class="skin button uppercase" href="#"> Skin default reacts to the skin</a>      </p>
+        <p>   <a class="orange button " href="#"> I can be any width</a>                </p>
+        <p>   <a class="button " href="#"> Your text</a>                        </p>
+        <p>   <a class="green button  " href="#"> Your text</a>                   </p>
+        <p>   <a class="blue button " href="#"> Your text</a>                     </p>
+        <p>   <a class="blue fontart-x1 button " href="#"> Your text</a>                </p>
+        <p>   <a class="yellow button uppercase black-text fontart-x1" href="#">I'm customizable</a>  </p>
+      </div>
+    </div>
+
+
+    <div class ="c-4-12">
+      <div class ="g divider-left">
+            <!-- Buttons -->
+        <p>   <a class=" medium gray-2 hover-blue fontart-x1  button" href="#"> Your text</a>             </p>
+        <p>   <a class=" large skin  fontart-x1 button" href="#"> Your text</a>                   </p>
+        <p>   <a class="large gray-3 hover-skin fontart-x1 button title-format-2 " href="#">They're Customizable</a>  </p>
+        <p>   <a class="large blue hover-white fontart-x1 button title-format-2 " href="#">Hover over me!</a>     </p>
+        <p>   <a class="large yellow fontart-x1 button title-format-2" href="#"> Your text</a>              </p>
+
+      </div>
+    </div>
+
+
+    <div class ="c-4-12">
+      <div class ="g divider-left">
+            <!-- Buttons -->
+        <p>   <a class="small rounded-fully orange button title-format-1" href="#"> Your text</a>                 </p>
+        <p>   <a class="rounded-fully  medium yellow hover-orange button fontart-x1 f-weight-normal " href="#"> Hover over me! </a></p>
+        <p>   <a class="large rounded-fully gray fontart-x1 button title-format-3 f-weight-normal" href="#">How you doing</a>   </p>
+        <p>   <a class="large rounded-fully skin fontart-x1 button title-format-2" href="#"> Your text</a>            </p>
+        <p>   <a class="large rounded-fully blue fontart-x1 button title-format-3 f-weight-normal" href="#"> Your text</a>    </p>
+      </div>
+    </div>
+  </section>
+
+</section>
+<!--END/  DEMO-Buttons -->
+
+
+<!--START  DEMO-Dropcaps -->
+<section>
+  <h2 class="section-title">Dropcaps <span class="line-effect"></span></h2>
+
+  <!-- START .row -->
+  <div class ="row gutter-width-2">
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p><span class="dropcap ">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p><span class="dropcap skin">A</span>wesome adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna. Quisque sit amet velit vel ante gravida consequat.</p>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+
+  </div>
+  <!-- END/ .row -->
+
+  <!-- START .row -->
+  <div class ="row gutter-width-2">
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p><span class="dropcap black skin-text">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p><span class="dropcap skin fontart-x1 shadow-inner">A</span>wesome adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna. Quisque sit amet velit vel ante gravida consequat.</p>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+
+  </div>
+  <!-- END/ .row -->
+</section>
+<!--END/  DEMO-Dropcaps -->
+
+
+<!--START  DEMO-Alert boxes -->
+<section>
+  <h2 class="section-title">Alert boxes <span class="line-effect"></span></h2>
+
+  <div class="row gutter-width-2">
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="removable info">
+          <h4 class="title">Sucess title goes here.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="removable success">
+          <h4 class="title">Info title goes here.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row gutter-width-2">
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="removable alert">
+          <h4 class="title">Alert title goes here.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="removable error">
+          <h4 class="title">Error title goes here.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row gutter-width-1">
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <div class="removable alert">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <div class="removable error">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+      </div>
+    </div>
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <div class="removable success">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <div class="removable info">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--END/  DEMO-Alert boxes -->
+
+
+<!--START  DEMO-Tables -->
+<section>
+  <h2 class="section-title">Class less Tables  <span class="line-effect"></span></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description/Usage  </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> nice <span class="skin-text title-format-3 f-17">Skin</span></th>
+        <th>Skin related text color </th>
+      </tr>
+      <tr>
+        <th><b>Nice </b>  <span class="gray-text title-format-3 f-17">Gray</span>   </th>
+        <th>Gray text color</th>
+      </tr>
+      <tr>
+        <th> nice <span class="orange-text title-format-3 f-17">Orange</span> </th>
+        <th>Orange for text color</th>
+      </tr>
+      <tr>
+        <th> nice <span class="blue-text title-format-3 f-17">Blue</span> </th>
+        <th>Sky Blue text color</th>
+      </tr>
+      <tr>
+        <th> nice <span class="green-text title-format-3 f-17">Green</span> </th>
+        <th>Apple Green text color</th>
+      </tr>
+      <tr>
+        <th>Cell</th>
+        <th>Another one</th>
+      </tr>
+      <tr>
+        <th>This is awesome</th>
+        <th>Isn't it ?</th>
+      </tr>
+    </tbody>
+  </table>
+
+
+</section>
+<!--END/  DEMO-Tables -->
+
+<!--START  DEMO-Expandable and Removable boxes -->
+<section>
+  <h2 class="section-title">Expandable and Removable boxes <span class="line-effect"></span></h2>
+
+  <div class="row gutter-width-2 m-b">
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="expandable default-expanded">
+          <h4 class="always-visible">Default can be changed.</h4>
+          <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor. </p>
+        </div>
+
+        <div class="expandable">
+          <h4 class="always-visible title-format-3 skin-text">The Content is hidden by default.</h4>
+          <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <div class="removable p gray">
+          <h4 class="always-visible">You can Remove me!</h4>
+          <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+
+        <div class="removable p gray-3">
+          <h4 class="always-visible fontart-x1">You can Remove me!</h4>
+          <p class = "dropdown white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--END/  DEMO-Expandable and Removable boxes -->
+
+
+<!--START  DEMO-Tabbed and Accordion type content -->
+<section>
+  <h2 class="section-title">Tabbed and Accordion type content <span class="line-effect"></span></h2>
+
+  <div class="row gutter-width-2 m-b">
+    <div class ="c-6-12">
+      <div class ="g">
+
+        <!--START .tabbed -->
+        <div class="tabbed">
+
+          <!--START .tabs -->
+          <ul class="tabs">
+            <li data-tab = "one">Tab one</li>
+            <li data-tab = "two">Tab two</li>
+            <li data-tab = "three">Your tab</li>
+            <li data-tab = "four">Yeah</li>
           </ul>
-        </div>
+          <!--END/ .tabs -->
 
-      </div>
-      <div class="c-3-5">
-        <div class="g mark-links">
-          <h2 class="title-format-2 h1">Try different title formats</h2>
-          <p class="title-format-3 gray-text f-17">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est velit, scelerisque in pellentesque at,   porttitor rhoncus. In pulvinar viverra neque et accumsan. </p>
-
-        </div>
-      </div>
-
-    </section>
-
-    <!--START  DEMO-blockquote  -->
-    <section>
-      <h2 class="section-title">Testimonials <span class="line-effect"></span></h2>
-      <div class="row gutter-width-2 m-b">
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <blockquote>
-              <p>It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.</p>
-              <cite>&ndash;&nbsp;Steve Jobs</cite>
-            </blockquote>
-
-          </div>
-        </div>
-
-        <div class ="c-6-12">
-          <div class ="g gray p-1 rounded">
-
-            <blockquote class="f-17">
-              <p>It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.</p>
-              <cite>&ndash;&nbsp;Steve Jobs</cite>
-            </blockquote>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--END/  DEMO-blockquote -->
-
-    <!--START  DEMO-lists -->
-    <section>
-      <h2 class="section-title">Lists  <span class="line-effect"></span></h2>
-
-      <div class="row gutter-width-2 m-b">
-        <div class ="c-3-12">
-          <div class ="g">
-            <h2 class="title-format-3 gray-text">List items</h2>
+          <!--START tab content -->
+          <div data-tab = "one">
+            <p>Lorem ipsum dolor sit amet, consectetur <b class="skin-text">Add anything</b> elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
             <ul class="check list">
               <li>List item</li>
               <li>Lorem ipsum</li>
               <li>Vivamus condimentum</li>
               <li>Mauris diam</li>
-              <li>Aenean dapibus</li>
-              <li>Pulvinar eros</li>
             </ul>
           </div>
-        </div>
+          <!--END/ tab content -->
 
-        <div class ="c-3-12">
-          <div class ="g">
-            <h2 class="title-format-3 gray-text">List items</h2>
-            <ul class="close list">
-              <li>List item</li>
-              <li>Lorem ipsum</li>
-              <li>Vivamus condimentum</li>
-              <li>Mauris diam</li>
-              <li>Aenean dapibus</li>
-              <li>Pulvinar eros</li>
-            </ul>
+          <!--START tab content -->
+          <div data-tab = "two">
+            <h4 class="h2 title-format-1 skin-text m-t-1">Add Anything you want</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
           </div>
-        </div>
+          <!--END/ tab content -->
 
-        <div class ="c-3-12">
-          <div class ="g">
-            <h2 class="title-format-3 gray-text">List items</h2>
-            <ul class="circle list">
-              <li>List item</li>
-              <li>Lorem ipsum</li>
-              <li>Vivamus condimentum</li>
-              <li>Mauris diam</li>
-              <li>Aenean dapibus</li>
-              <li>Pulvinar eros</li>
-            </ul>
+          <!--START tab content -->
+          <div  data-tab = "three">
+            <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
           </div>
-        </div>
+          <!--END/ tab content -->
 
-
-        <div class ="c-3-12">
-          <div class ="g">
-            <h2 class="title-format-3 gray-text">List items Mixed</h2>
-            <ul class="close list">
-              <li class="circle">Pulvinar eros</li>
-              <li class="check">Lorem ipsum</li>
-              <li class="check">List item</li>
-              <li >List item</li>
-              <li>List item</li>
-              <li>Lorem ipsum</li>
-            </ul>
+          <!--START tab content -->
+          <div data-tab = "four">
+            <h4 class="h2 title-format-1">Add Anything you want</h4>
+            <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
           </div>
+          <!--END/ tab content -->
+
         </div>
+        <!--END/ .tabbed -->
 
       </div>
-    </section>
-    <!--END/  DEMO-lists -->
+    </div>
 
+    <div class ="c-6-12">
+      <div class ="g">
 
-    <!--START  DEMO-Buttons -->
-    <section>
-      <h2 class="section-title">Buttons - There're are many class combinations you can try... <span class="line-effect"></span></h2>
-      <section class="row gutter-width-1 m-t">
-        <div class ="c-4-12">
-          <div class ="g divider-left">
+        <!--START .accordion -->
+        <div class="accordion">
 
-                <!-- Buttons -->
-            <p>   <a class="skin button uppercase" href="#"> Skin default reacts to the skin</a>      </p>
-            <p>   <a class="orange button " href="#"> I can be any width</a>                </p>
-            <p>   <a class="button " href="#"> Your text</a>                        </p>
-            <p>   <a class="green button  " href="#"> Your text</a>                   </p>
-            <p>   <a class="blue button " href="#"> Your text</a>                     </p>
-            <p>   <a class="blue fontart-x1 button " href="#"> Your text</a>                </p>
-            <p>   <a class="yellow button uppercase black-text fontart-x1" href="#">I'm customizable</a>  </p>
-          </div>
+          <section>
+            <h4 class="header">Header goes here</h4>
+            <div class="content box">
+              <!--CONTENT-->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+              <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
+            </div>
+          </section>
+
+          <section>
+            <h4 class="header">Add a title here</h4>
+            <div class="content box">
+              <!--CONTENT-->
+              <h4 class="h2 title-format-1 gray-text ">Add Anything you want</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
+
+            </div>
+          </section>
+
+          <section>
+            <h4 class="header">Header goes here</h4>
+            <div class="content box">
+              <!--CONTENT-->
+              <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
+            </div>
+          </section>
+
         </div>
-
-
-        <div class ="c-4-12">
-          <div class ="g divider-left">
-                <!-- Buttons -->
-            <p>   <a class=" medium gray-2 hover-blue fontart-x1  button" href="#"> Your text</a>             </p>
-            <p>   <a class=" large skin  fontart-x1 button" href="#"> Your text</a>                   </p>
-            <p>   <a class="large gray-3 hover-skin fontart-x1 button title-format-2 " href="#">They're Customizable</a>  </p>
-            <p>   <a class="large blue hover-white fontart-x1 button title-format-2 " href="#">Hover over me!</a>     </p>
-            <p>   <a class="large yellow fontart-x1 button title-format-2" href="#"> Your text</a>              </p>
-
-          </div>
-        </div>
-
-
-        <div class ="c-4-12">
-          <div class ="g divider-left">
-                <!-- Buttons -->
-            <p>   <a class="small rounded-fully orange button title-format-1" href="#"> Your text</a>                 </p>
-            <p>   <a class="rounded-fully  medium yellow hover-orange button fontart-x1 f-weight-normal " href="#"> Hover over me! </a></p>
-            <p>   <a class="large rounded-fully gray fontart-x1 button title-format-3 f-weight-normal" href="#">How you doing</a>   </p>
-            <p>   <a class="large rounded-fully skin fontart-x1 button title-format-2" href="#"> Your text</a>            </p>
-            <p>   <a class="large rounded-fully blue fontart-x1 button title-format-3 f-weight-normal" href="#"> Your text</a>    </p>
-          </div>
-        </div>
-      </section>
-
-    </section>
-    <!--END/  DEMO-Buttons -->
-
-
-    <!--START  DEMO-Dropcaps -->
-    <section>
-      <h2 class="section-title">Dropcaps <span class="line-effect"></span></h2>
-
-      <!-- START .row -->
-      <div class ="row gutter-width-2">
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p><span class="dropcap ">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p><span class="dropcap skin">A</span>wesome adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna. Quisque sit amet velit vel ante gravida consequat.</p>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
+        <!--END/ .accordion -->
 
       </div>
-      <!-- END/ .row -->
-
-      <!-- START .row -->
-      <div class ="row gutter-width-2">
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p><span class="dropcap black skin-text">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna.</p>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p><span class="dropcap skin fontart-x1 shadow-inner">A</span>wesome adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque eu neque augue, ut iaculis urna. Quisque sit amet velit vel ante gravida consequat.</p>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-
-      </div>
-      <!-- END/ .row -->
-    </section>
-    <!--END/  DEMO-Dropcaps -->
-
-
-    <!--START  DEMO-Alert boxes -->
-    <section>
-      <h2 class="section-title">Alert boxes <span class="line-effect"></span></h2>
-
-      <div class="row gutter-width-2">
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="removable info">
-              <h4 class="title">Sucess title goes here.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="removable success">
-              <h4 class="title">Info title goes here.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row gutter-width-2">
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="removable alert">
-              <h4 class="title">Alert title goes here.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="removable error">
-              <h4 class="title">Error title goes here.</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row gutter-width-1">
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <div class="removable alert">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <div class="removable error">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-
-          </div>
-        </div>
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <div class="removable success">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <div class="removable info">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--END/  DEMO-Alert boxes -->
-
-
-    <!--START  DEMO-Tables -->
-    <section>
-      <h2 class="section-title">Class less Tables  <span class="line-effect"></span></h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Class name</th>
-            <th>Description/Usage  </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th> nice <span class="skin-text title-format-3 f-17">Skin</span></th>
-            <th>Skin related text color </th>
-          </tr>
-          <tr>
-            <th><b>Nice </b>  <span class="gray-text title-format-3 f-17">Gray</span>   </th>
-            <th>Gray text color</th>
-          </tr>
-          <tr>
-            <th> nice <span class="orange-text title-format-3 f-17">Orange</span> </th>
-            <th>Orange for text color</th>
-          </tr>
-          <tr>
-            <th> nice <span class="blue-text title-format-3 f-17">Blue</span> </th>
-            <th>Sky Blue text color</th>
-          </tr>
-          <tr>
-            <th> nice <span class="green-text title-format-3 f-17">Green</span> </th>
-            <th>Apple Green text color</th>
-          </tr>
-          <tr>
-            <th>Cell</th>
-            <th>Another one</th>
-          </tr>
-          <tr>
-            <th>This is awesome</th>
-            <th>Isn't it ?</th>
-          </tr>
-        </tbody>
-      </table>
-
-
-    </section>
-    <!--END/  DEMO-Tables -->
-
-    <!--START  DEMO-Expandable and Removable boxes -->
-    <section>
-      <h2 class="section-title">Expandable and Removable boxes <span class="line-effect"></span></h2>
-
-      <div class="row gutter-width-2 m-b">
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="expandable default-expanded">
-              <h4 class="always-visible">Default can be changed.</h4>
-              <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor. </p>
-            </div>
-
-            <div class="expandable">
-              <h4 class="always-visible title-format-3 skin-text">The Content is hidden by default.</h4>
-              <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <div class="removable p gray">
-              <h4 class="always-visible">You can Remove me!</h4>
-              <p class = "dropdown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-
-            <div class="removable p gray-3">
-              <h4 class="always-visible fontart-x1">You can Remove me!</h4>
-              <p class = "dropdown white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--END/  DEMO-Expandable and Removable boxes -->
-
-
-    <!--START  DEMO-Tabbed and Accordion type content -->
-    <section>
-      <h2 class="section-title">Tabbed and Accordion type content <span class="line-effect"></span></h2>
-
-      <div class="row gutter-width-2 m-b">
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!--START .tabbed -->
-            <div class="tabbed">
-
-              <!--START .tabs -->
-              <ul class="tabs">
-                <li data-tab = "one">Tab one</li>
-                <li data-tab = "two">Tab two</li>
-                <li data-tab = "three">Your tab</li>
-                <li data-tab = "four">Yeah</li>
-              </ul>
-              <!--END/ .tabs -->
-
-              <!--START tab content -->
-              <div data-tab = "one">
-                <p>Lorem ipsum dolor sit amet, consectetur <b class="skin-text">Add anything</b> elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-                <ul class="check list">
-                  <li>List item</li>
-                  <li>Lorem ipsum</li>
-                  <li>Vivamus condimentum</li>
-                  <li>Mauris diam</li>
-                </ul>
-              </div>
-              <!--END/ tab content -->
-
-              <!--START tab content -->
-              <div data-tab = "two">
-                <h4 class="h2 title-format-1 skin-text m-t-1">Add Anything you want</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-              </div>
-              <!--END/ tab content -->
-
-              <!--START tab content -->
-              <div  data-tab = "three">
-                <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
-              </div>
-              <!--END/ tab content -->
-
-              <!--START tab content -->
-              <div data-tab = "four">
-                <h4 class="h2 title-format-1">Add Anything you want</h4>
-                <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
-              </div>
-              <!--END/ tab content -->
-
-            </div>
-            <!--END/ .tabbed -->
-
-          </div>
-        </div>
-
-        <div class ="c-6-12">
-          <div class ="g">
-
-            <!--START .accordion -->
-            <div class="accordion">
-
-              <section>
-                <h4 class="header">Header goes here</h4>
-                <div class="content box">
-                  <!--CONTENT-->
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-                  <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
-                </div>
-              </section>
-
-              <section>
-                <h4 class="header">Add a title here</h4>
-                <div class="content box">
-                  <!--CONTENT-->
-                  <h4 class="h2 title-format-1 gray-text ">Add Anything you want</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo.</p>
-
-                </div>
-              </section>
-
-              <section>
-                <h4 class="header">Header goes here</h4>
-                <div class="content box">
-                  <!--CONTENT-->
-                  <p>Pellentesque condimentum nibh vel nunc mollis ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc luctus congue feugiat. Duis id turpis mauris, tempus lacinia est. Ut malesuada fermentum vulputate. Nulla facilisi. Suspendisse porttitor.</p>
-                </div>
-              </section>
-
-            </div>
-            <!--END/ .accordion -->
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--END/  DEMO-Tabbed and Accordion type content -->
-
-
-    <!--START  DEMO-Image -->
-    <section>
-      <h2 class="section-title">Image <span class="line-effect"></span></h2>
-
-      <!-- START .row -->
-      <div class ="row gutter-width-1">
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-            <!-- your content -->
-            <h3>Image</h3>
-            <a class="image" ><img alt="" src="images/sample-content/portfolio3.png"> </a>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-            <!-- your content -->
-            <h4>Image + Captions</h4>
-            <a class="image"  data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <h4>Image + Frame + Captions</h4>
-            <a class="image frame " data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <h4> + Fancybox (Lightbox)</h4>
-            <a class="image frame fancybox" href="images/sample-content/portfolio3.png" data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-      </div>
-      <!-- END/ .row -->
-
-
-      <!-- START .row -->
-      <div class ="row gutter-width-1 m-t-3">
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-            <h3>Image alignment left</h3>
-            <a class="image left" href="images/sample-content/thumb1.png" ><img alt="" src="images/sample-content/thumb1.png">  </a>
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-6-12">
-          <div class ="g">
-            <h3>Image alignment right</h3>
-            <a class="image right" href="images/sample-content/thumb1.png"><img alt="" src="images/sample-content/thumb1.png">  </a>
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-
-      </div>
-      <!-- END/ .row -->
-
-    </section>
-    <!--END/  DEMO-Image -->
-
-
-    <!--START  DEMO-Social Networking Icons -->
-    <section>
-      <h2 class="section-title">Social Networking Icons (36 included)<span class="line-effect"></span></h2>
-
-
-      <ul class="social-connect ">
-        <li><a href="" data-tooltip ="facebook"><img src = "images/content/social-icons/facebook.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="RSS feed"><img src = "images/content/social-icons/rss.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="bebo"><img src = "images/content/social-icons/bebo.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="blogger"><img src = "images/content/social-icons/blogger.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="bng"><img src = "images/content/social-icons/bng.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="creattica"><img src = "images/content/social-icons/creattica.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="daviant art"><img src = "images/content/social-icons/daviant-art.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="delicious"><img src = "images/content/social-icons/delicious.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="designbump"><img src = "images/content/social-icons/designbump.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="digg"><img src = "images/content/social-icons/digg.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="dribbble"><img src = "images/content/social-icons/dribbble.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="tumblr"><img src = "images/content/social-icons/tumblr.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="feed-burner"><img src = "images/content/social-icons/feed-burner.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="flickr"><img src = "images/content/social-icons/flickr.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="friendfeed"><img src = "images/content/social-icons/friendfeed.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="google-buzz"><img src = "images/content/social-icons/google-buzz.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="google-plus"><img src = "images/content/social-icons/google-plus.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="lastfm"><img src = "images/content/social-icons/lastfm.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="linkedin"><img src = "images/content/social-icons/linkedin.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="mail"><img src = "images/content/social-icons/mail.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="mixx"><img src = "images/content/social-icons/mixx.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="myspace new "><img src = "images/content/social-icons/myspace-new.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="myspace"><img src = "images/content/social-icons/myspace.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="newsvine"><img src = "images/content/social-icons/newsvine.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="ning"><img src = "images/content/social-icons/ning.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="orcut"><img src = "images/content/social-icons/orcut.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="picasa"><img src = "images/content/social-icons/picasa.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="reddit"><img src = "images/content/social-icons/reddit.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="skype"><img src = "images/content/social-icons/skype.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="stumbleupon"><img src = "images/content/social-icons/stumbleupon.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="twitter"><img src = "images/content/social-icons/twitter.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="vimeo"><img src = "images/content/social-icons/vimeo.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="wordpress"><img src = "images/content/social-icons/wordpress.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="yahoo"><img src = "images/content/social-icons/yahoo.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="youtube"><img src = "images/content/social-icons/youtube.png" alt="" /></a></li>
-        <li><a href="" data-tooltip ="XING"><img src = "images/content/social-icons/xing.png" alt="" /></a></li>
-      </ul>
-    </section>
-    <!--END/  DEMO-Social Networking Icons  -->
-
-    <!--START  DEMO-Grid columns TODO-->
-    <section>
-
-    <h2 class="section-title">Grid columns <span class="line-effect"></span></h2>
-
-      <!-- START .row -->
-      <div class ="row gutter-width-1">
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-        <!-- START GRID COLUMN -->
-        <div class ="c-3-12">
-          <div class ="g">
-
-            <!-- your content -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
-
-          </div>
-        </div>
-        <!-- END/ GRID COLUMN -->
-
-      </div>
-      <!-- END/ .row -->
-
-    </section>
-
-
-    <a class="skin button fontart-x1 m-t" href="demo-grid.html">See Grid demo to see what it really can do for you</a>
-
-
-
-    <!--START  DEMO-CSS3 columns -->
-    <section>
-      <h2 class="section-title">CSS3 columns<span class="line-effect"></span></h2>
-
-      <div class="row">
-        <p class="m-b-3 f-15 title-format-3 gray-text">CSS3 has a new feature called CSS columns. You can add them by adding <code>.css-col-2</code> and <code>.css-col-3</code> classes . <br>(All modern browsers support CSS columns ,including IE10 )</p>
-        <p class ="css-col-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, qua lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia </p>
-        <p class ="css-col-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quaNunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mimagnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, qua congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia </p>
-      </div>
-
-    </section>
-    <!--END/  DEMO-CSS3 columns -->
-
-
-    <!--START  DEMO-font sizes and formats -->
-    <section>
-
-      <h2 class="section-title">font sizes and formats<span class="line-effect"></span></h2>
-
-      <div class="row gutter-width-2">
-        <div class="c-6-12">
-          <div class="g">
-            <h1>font sizes testing H1 </h1>
-            <h2>font sizes testing H2 </h2>
-            <h3>font sizes testing H3 </h3>
-            <h4>font sizes testing H4 </h4>
-            <h5>font sizes testing H5 </h5>
-            <h6>font sizes testing H6 </h6>
-            <hr>
-            <h2 class="title-format-1">title-format-1</h2>
-            <h2 class="title-format-2">title-format-2</h2>
-            <h2 class="title-format-3">title-format-3</h2>
-          </div>
-        </div>
-
-        <div class="c-6-12">
-          <div class="g">
-            <p class="f-11 fontface-2"> p with f- font sizes testing</p>
-            <p class="f-12 fontface-2"> p with f- font sizes testing</p>
-            <p class="f-13 fontface-2"> p with f- font sizes testing</p>
-            <p class="f-15 fontface-2"> p with f- font sizes testing</p>
-            <p class="f-17 fontface-2"> p with f- font sizes testing</p>
-            <p class="f-20 fontface-2">...</p>
-            <p class="f-60 fontface-2"> That's huge! </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--END/  DEMO-font sizes and formats -->
+    </div>
 
   </div>
-  <!-- END/ #page -->
+</section>
+<!--END/  DEMO-Tabbed and Accordion type content -->
 
 
+<!--START  DEMO-Image -->
+<section>
+  <h2 class="section-title">Image <span class="line-effect"></span></h2>
 
-  <!-- START global footer -->
-  <footer>
-    <section class = "container" >
+  <!-- START .row -->
+  <div class ="row gutter-width-1">
 
-      <!-- START .row-->
-      <div class ="row gutter-width-2">
-
-        <!-- START GRID COLUMN-->
-        <section class ="c-5-16">
-          <!-- START .about-us widget-->
-          <div class ="g about-us widget">
-
-            <h3 class="title ">About us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
-
-            <section>
-              <h4 class="title">Stay connected..</h4>
-
-              <!-- START .social-connect-->
-              <ul class="social-connect">
-                <li><a href="#" data-tooltip ="Like us on facebook"><img src ="images/content/social-icons/facebook.png" alt="facebook"/></a></li>
-                <li><a href="#" data-tooltip ="Subscribe to RSS feed"><img src ="images/content/social-icons/rss.png" alt="RSS"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on twitter"><img src ="images/content/social-icons/twitter.png" alt="twitter"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Dribbble"><img src ="images/content/social-icons/dribbble.png" alt="dribbble"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Flickr"><img src ="images/content/social-icons/Flickr.png" alt="Flickr"/></a></li>
-              </ul>
-              <!-- END/ .social-connect-->
-
-            </section>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </section>
-        <!-- END/ GRID COLUMN-->
-
-        <!-- START GRID COLUMN-->
-        <aside class ="c-6-16">
-          <!-- START .about-us widget-->
-          <div class ="g twitter widget">
-
-            <h3 class="title">Latest tweets</h3>
-            <div id = "twits">
-              Loading...
-            </div>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </aside>
-        <!-- END/ GRID COLUMN-->
-
-        <aside class="c-5-16">
-          <!-- START .flickr widget-->
-          <div class="g flickr widget animate-all">
-
-            <p class="title-format-3 gray-text f-13 m-0 ">talk to a real person</p>
-            <p class=" f-20 fontart-3 fontface-2 divider-bottom m-b-1">Call us 123-456-7890</p>
-
-            <h3 class="title"> newsletter</h3>
-            <p>Join our newsletter to get weekly updates on our nerw theme releases and theme updates</p>
-
-            <form>
-              <input placeholder="Enter your Email"> <button class="skin button">Sign up </button>
-            </form>
-
-          </div>
-          <!-- END/ .flickr widget-->
-        </aside>
-
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+        <!-- your content -->
+        <h3>Image</h3>
+        <a class="image" ><img alt="" src="images/sample-content/portfolio3.png"> </a>
 
       </div>
-      <!-- END/ .row -->
+    </div>
+    <!-- END/ GRID COLUMN -->
 
-      <!-- START #copyright-note-->
-      <div class ="row" id ="copyright-note">
-
-        <!--START #footer-nav-->
-        <div  id ="footer-nav" class="semi-left uppercase">
-          <a href="./">Home</a> <a href="#">pages</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a>
-        </div>
-        <!--END/ #footer-nav-->
-
-        <!--Add your copyright here-->
-        <p>Copyright &copy; 2012 Your Company. All rights reserved.</p>
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+        <!-- your content -->
+        <h4>Image + Captions</h4>
+        <a class="image"  data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
 
       </div>
-      <!-- END/ #copyright-note -->
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <h4>Image + Frame + Captions</h4>
+        <a class="image frame " data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <h4> + Fancybox (Lightbox)</h4>
+        <a class="image frame fancybox" href="images/sample-content/portfolio3.png" data-image-caption ="You can add a caption"><img alt="" src="images/sample-content/portfolio3.png"> </a>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+  </div>
+  <!-- END/ .row -->
 
 
-    </section><!-- END/ container -->
-  </footer>
-  <!-- END/ global footer -->
+  <!-- START .row -->
+  <div class ="row gutter-width-1 m-t-3">
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+        <h3>Image alignment left</h3>
+        <a class="image left" href="images/sample-content/thumb1.png" ><img alt="" src="images/sample-content/thumb1.png">  </a>
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-6-12">
+      <div class ="g">
+        <h3>Image alignment right</h3>
+        <a class="image right" href="images/sample-content/thumb1.png"><img alt="" src="images/sample-content/thumb1.png">  </a>
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+
+  </div>
+  <!-- END/ .row -->
+
+</section>
+<!--END/  DEMO-Image -->
+
+
+<!--START  DEMO-Social Networking Icons -->
+<section>
+  <h2 class="section-title">Social Networking Icons (36 included)<span class="line-effect"></span></h2>
+
+
+  <ul class="social-connect ">
+    <li><a href="" data-tooltip ="facebook"><img src = "images/content/social-icons/facebook.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="RSS feed"><img src = "images/content/social-icons/rss.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="bebo"><img src = "images/content/social-icons/bebo.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="blogger"><img src = "images/content/social-icons/blogger.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="bng"><img src = "images/content/social-icons/bng.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="creattica"><img src = "images/content/social-icons/creattica.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="daviant art"><img src = "images/content/social-icons/daviant-art.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="delicious"><img src = "images/content/social-icons/delicious.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="designbump"><img src = "images/content/social-icons/designbump.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="digg"><img src = "images/content/social-icons/digg.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="dribbble"><img src = "images/content/social-icons/dribbble.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="tumblr"><img src = "images/content/social-icons/tumblr.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="feed-burner"><img src = "images/content/social-icons/feed-burner.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="flickr"><img src = "images/content/social-icons/flickr.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="friendfeed"><img src = "images/content/social-icons/friendfeed.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="google-buzz"><img src = "images/content/social-icons/google-buzz.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="google-plus"><img src = "images/content/social-icons/google-plus.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="lastfm"><img src = "images/content/social-icons/lastfm.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="linkedin"><img src = "images/content/social-icons/linkedin.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="mail"><img src = "images/content/social-icons/mail.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="mixx"><img src = "images/content/social-icons/mixx.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="myspace new "><img src = "images/content/social-icons/myspace-new.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="myspace"><img src = "images/content/social-icons/myspace.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="newsvine"><img src = "images/content/social-icons/newsvine.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="ning"><img src = "images/content/social-icons/ning.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="orcut"><img src = "images/content/social-icons/orcut.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="picasa"><img src = "images/content/social-icons/picasa.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="reddit"><img src = "images/content/social-icons/reddit.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="skype"><img src = "images/content/social-icons/skype.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="stumbleupon"><img src = "images/content/social-icons/stumbleupon.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="twitter"><img src = "images/content/social-icons/twitter.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="vimeo"><img src = "images/content/social-icons/vimeo.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="wordpress"><img src = "images/content/social-icons/wordpress.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="yahoo"><img src = "images/content/social-icons/yahoo.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="youtube"><img src = "images/content/social-icons/youtube.png" alt="" /></a></li>
+    <li><a href="" data-tooltip ="XING"><img src = "images/content/social-icons/xing.png" alt="" /></a></li>
+  </ul>
+</section>
+<!--END/  DEMO-Social Networking Icons  -->
+
+<!--START  DEMO-Grid columns TODO-->
+<section>
+
+<h2 class="section-title">Grid columns <span class="line-effect"></span></h2>
+
+  <!-- START .row -->
+  <div class ="row gutter-width-1">
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+    <!-- START GRID COLUMN -->
+    <div class ="c-3-12">
+      <div class ="g">
+
+        <!-- your content -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus.</p>
+
+      </div>
+    </div>
+    <!-- END/ GRID COLUMN -->
+
+  </div>
+  <!-- END/ .row -->
+
+</section>
+
+
+<a class="skin button fontart-x1 m-t" href="demo-grid.html">See Grid demo to see what it really can do for you</a>
 
 
 
-  <!-- START JS -->
+<!--START  DEMO-CSS3 columns -->
+<section>
+  <h2 class="section-title">CSS3 columns<span class="line-effect"></span></h2>
 
-    <!-- jQuery Javascript Library-->
-    <script src="js/jquery.min.js"></script>
+  <div class="row">
+    <p class="m-b-3 f-15 title-format-3 gray-text">CSS3 has a new feature called CSS columns. You can add them by adding <code>.css-col-2</code> and <code>.css-col-3</code> classes . <br>(All modern browsers support CSS columns ,including IE10 )</p>
+    <p class ="css-col-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, qua lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia </p>
+    <p class ="css-col-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mi congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quaNunc egestas mauris ut nisl rhoncus lacinia pulvinar eros sollicitudin. Mauris diam ligula, posuere in fringilla id, gravida a risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, quam ac luctus rutrum, nulla mimagnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, qua congue orci, ut accumsan urna orci id leo. Aenean dapibus interdum suscipit. Nunc egestas mauris ut nisl rhoncus lacinia </p>
+  </div>
 
-    <!--10 JQuery plugins -concatenated - see the documentation for more info -->
-    <script src="js/essential.plugins.min.js"></script>
+</section>
+<!--END/  DEMO-CSS3 columns -->
 
-    <!-- Custom js for GearBox HTML template-->
-    <script src="js/custom.js"></script>
 
-  <!-- END/ JS -->
+<!--START  DEMO-font sizes and formats -->
+<section>
 
-</body>
+  <h2 class="section-title">font sizes and formats<span class="line-effect"></span></h2>
+
+  <div class="row gutter-width-2">
+    <div class="c-6-12">
+      <div class="g">
+        <h1>font sizes testing H1 </h1>
+        <h2>font sizes testing H2 </h2>
+        <h3>font sizes testing H3 </h3>
+        <h4>font sizes testing H4 </h4>
+        <h5>font sizes testing H5 </h5>
+        <h6>font sizes testing H6 </h6>
+        <hr>
+        <h2 class="title-format-1">title-format-1</h2>
+        <h2 class="title-format-2">title-format-2</h2>
+        <h2 class="title-format-3">title-format-3</h2>
+      </div>
+    </div>
+
+    <div class="c-6-12">
+      <div class="g">
+        <p class="f-11 fontface-2"> p with f- font sizes testing</p>
+        <p class="f-12 fontface-2"> p with f- font sizes testing</p>
+        <p class="f-13 fontface-2"> p with f- font sizes testing</p>
+        <p class="f-15 fontface-2"> p with f- font sizes testing</p>
+        <p class="f-17 fontface-2"> p with f- font sizes testing</p>
+        <p class="f-20 fontface-2">...</p>
+        <p class="f-60 fontface-2"> That's huge! </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--END/  DEMO-font sizes and formats -->

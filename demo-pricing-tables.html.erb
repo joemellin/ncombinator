@@ -1,870 +1,548 @@
+<% @body_id = "add-a-page-specific-id" %>
 
-<body id ="add-a-page-specific-id">
+<section class="info">
+  <h2 class="title">They're Highly Customizable </h2>
+  <ul class="check list">
+    <li>Pricing boxes are build on the <a href="demo-grid.html">demention Grid</a> so changing column count , width , gutter size ,etc. is easy as changing the unit number of grid classes.</li>
+    <li>By simply using the Grid system and other premade classes , you can easily make nice looking pricing tables without adding a line of new CSS !</li>
+    <li>Change the current skin  and see how pricing tables respond to skin colors.</li>
+  </ul>
+</section>
 
-  <!--START Main header -->
-  <header>
 
-    <!--START #top-bar .container -->
-    <aside id = "top-bar" class = "hidden container">
-      <!--START .content -->
-      <div class="content">
-        <!--START .row -->
-        <div class="row gutter-width-2">
+<hr>
 
-          <!-- START GRID COLUMN-->
-          <section class="c-6-12">
 
-            <!-- START .about-us widget-->
-            <div class="g widget">
-              <h3 class="title ">Feel free to add any content you want inside this box</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
-              <input class="search animate" placeholder = "Type and hit enter" >
-            </div>
-            <!-- END/ .about-us widget-->
 
-          </section>
-          <!-- END/ GRID COLUMN-->
+<!-- START CODE SNIPPETS -  PRICING TABLES ************************************************************************************************************************** -->
 
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
 
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Links list</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
 
-          </section>
-          <!-- END/ GRID COLUMN-->
+<h2 class="center-text h3 m-b-4">Pricing table <mark>#1</mark></h2>
 
-          <!-- START GRID COLUMN-->
-          <section class="c-3-12">
 
-            <!-- START .about-us widget-->
-            <div class="g widget ">
-              <h3 class="title ">Explorer more</h3>
-              <ul class="list no-link-color">
-                <li><a href="#">List item</a></li>
-                <li><a href="#">Lorem ipsum</a></li>
-                <li><a href="#">Vivamus condimentum</a></li>
-                <li><a href="#">Mauris diam</a></li>
-              </ul>
-            </div>
-            <!-- END/ .about-us widget-->
+<!--START .pricing-table #1-->
+<div class="rounded gray p-1">
+  <div class="pricing-table row gutter-width-1">
 
-          </section>
-          <!-- END/ GRID COLUMN-->
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
 
+      <!--START PRICING BOX-->
+      <div class="g pricing box">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Basic</h3>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$10</span>
+          <small>Per month</small>
         </div>
-        <!--END/ .row -->
-      </div>
-      <!--END/ .content -->
-    </aside>
-    <!--END/  #top-bar .hidden .container-->
+        <!--END/ .price -->
 
-
-    <!--START .container-->
-    <div class = "container" >
-
-      <!--#top-bar toggle button for small screens (visible on small screens) -->
-      <div id = "ss-top" class="ss-only" ><span class="skin right" data-toggle ="#top-bar"><a href="#">+</a> </span></div>
-
-      <!--START #header-logo -->
-      <div id="header-logo">
-        <a href="./">
-          <img src="images/sample-content/logo.png" alt="GearBox HTML"/>
-        </a>
-      </div>
-      <!--END/ #header-logo -->
-
-      <!--START #navigation -->
-      <nav id="navigation">
-        <ul>
-
-          <!--START menu item -->
-          <li>
-            <a href="./">Home</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li class ="current">
-            <a href="#">Pages</a>
-
-            <!--START dropdown level one -->
-            <ul>
-
-              <li><a href="#">Home suggestions</a>
-                <ul>
-                  <li><a href="home-suggestion-2.html">Home suggestion 2</a></li>
-                  <li><a href="home-suggestion-3.html">Home suggestion 3</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">More pages</a>
-                <ul>
-                  <li><a href="layout-nav+content+sidebar.html">nav + content + sidebar</a></li>
-                  <li><a href="portfolio-single.html">Portfolio single</a></li>
-                  <li><a href="faq-page.html">FAQ page</a></li>
-                  <li><a href="#">More to come..</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">Galleries</a>
-                <ul>
-                  <li><a href="gallery-two-col.html">gallery two col</a></li>
-                  <li><a href="gallery-three-col.html">gallery three col</a></li>
-                  <li><a href="gallery-four-col.html">gallery four col</a></li>
-                  <li><a href="gallery-four-col-style-1.html">gallery four col (style 1)</a></li>
-                  <li><a href="gallery-three-col-style-2.html">gallery three col (style 2)</a></li>
-                </ul>
-              </li>
-
-              <li><a href="blog-posts.html">Blog posts</a></li>
-
-              <li><a href="single-blog-post.html">Blog single post </a></li>
-
-              <li><a href="contact-page.php">Contact page</a></li>
-
-              <li class ="current"><a href="demo-pricing-tables.html">Pricing tables</a></li>
-
-              <li><a href="404-not-found.html">404 Not found</a></li>
-
-              <li><a href="#">A Lot more to come...</a></li>
-
-            </ul>
-            <!--END/ dropdown level one -->
-
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li>
-            <a href="demo-typography.html">Typography</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START menu item -->
-          <li>
-            <a href="demo-grid.html">Grid</a>
-          </li>
-          <!--END/ menu item -->
-
-          <!--START #top-bar toggle button-->
-          <li data-toggle ="#top-bar" class="skin">
-            <a href="#top-bar">+</a>
-          </li>
-          <!--END/ #top-bar toggle button -->
-
+        <!--START .list -->
+        <ul class="check list">
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Gutter sizes</a></li>
+          <li>Column width</li>
+          <li>Highly customizable</li>
+          <li>Awesome</li>
+          <li class="close">This one</li>
+          <li class="close">That one</li>
+          <li class="close">This one</li>
         </ul>
-      </nav>
-      <!--END/ #navigation-->
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
 
     </div>
-    <!--END/ .container -->
+    <!--END / GRID COLUMN-->
 
 
-    <!--START .container-->
-    <section class = "container">
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
 
-      <!--START #page-header-->
-      <div id ="page-header">
+      <!--START PRICING BOX-->
+      <div class="g white rounded pricing box shadow-3 ">
 
-        <!-- START page title Note : you can also use h1 , h2 etc. -  make sure you add .title and .sub -->
-        <h2 class=" title">Page</h2>
-        <span class="sub">Description</span>
-        <!-- END/ page title -->
+        <!--TITLE-->
+        <h3 class="title green-text">Premium</h3>
+
+        <!--RIBBON - featured-->
+        <span class="ribbon"></span>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$48</span>
+          <small>per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>Gutter sizes</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Column width</a></li>
+          <li>Highly customizable</li>
+          <li>Awesome</li>
+          <li>This one</li>
+          <li class="close">That one</li>
+          <li class="close">This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="green button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
 
       </div>
-      <!--END/ #page-header-->
+      <!--END / PRICING BOX-->
 
-    </section>
-    <!--END/ .container -->
-
-
-  </header>
-  <!--END/ Main header -->
+    </div>
+    <!--END / GRID COLUMN-->
 
 
-  <!--START #page -->
-  <div id="page">
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
 
-    <!-- START noscript alert -->
-    <noscript>
-      <div  class="alert">
-        <h5 class="title">Javascript is disabled in your browser :( </h5>
-        Javascript is required to work this site properly.
-      </div>
-    </noscript>
-    <!-- END/ noscript alert -->
+      <!--START PRICING BOX-->
+      <div class="g pricing box ss-divider">
 
+        <!--TITLE-->
+        <h3 class="title orange-text">Business</h3>
 
-    <section class="info">
-      <h2 class="title">They're Highly Customizable </h2>
-      <ul class="check list">
-        <li>Pricing boxes are build on the <a href="demo-grid.html">demention Grid</a> so changing column count , width , gutter size ,etc. is easy as changing the unit number of grid classes.</li>
-        <li>By simply using the Grid system and other premade classes , you can easily make nice looking pricing tables without adding a line of new CSS !</li>
-        <li>Change the current skin  and see how pricing tables respond to skin colors.</li>
-      </ul>
-    </section>
-
-
-    <hr>
-
-
-
-    <!-- START CODE SNIPPETS -  PRICING TABLES ************************************************************************************************************************** -->
-
-
-
-    <h2 class="center-text h3 m-b-4">Pricing table <mark>#1</mark></h2>
-
-
-    <!--START .pricing-table #1-->
-    <div class="rounded gray p-1">
-      <div class="pricing-table row gutter-width-1">
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Basic</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$10</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Gutter sizes</a></li>
-              <li>Column width</li>
-              <li>Highly customizable</li>
-              <li>Awesome</li>
-              <li class="close">This one</li>
-              <li class="close">That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
+        <!--START .price -->
+        <div class="price">
+          <span>$89</span>
+          <small>Per month</small>
         </div>
-        <!--END / GRID COLUMN-->
+        <!--END/ .price -->
 
+        <!--START .list -->
+        <ul class="check list">
+          <li>Gutter sizes</li>
+          <li>Column width</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Highly customizable</a></li>
+          <li>Awesome</li>
+          <li>This one</li>
+          <li>That one</li>
+          <li class="close">This one</li>
+        </ul>
+        <!--END/ .list -->
 
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g white rounded pricing box shadow-3 ">
-
-            <!--TITLE-->
-            <h3 class="title green-text">Premium</h3>
-
-            <!--RIBBON - featured-->
-            <span class="ribbon"></span>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$48</span>
-              <small>per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>Gutter sizes</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Column width</a></li>
-              <li>Highly customizable</li>
-              <li>Awesome</li>
-              <li>This one</li>
-              <li class="close">That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="green button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="orange button uppercase" href="#">Purchase</a>
         </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box ss-divider">
-
-            <!--TITLE-->
-            <h3 class="title orange-text">Business</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$89</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>Gutter sizes</li>
-              <li>Column width</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Highly customizable</a></li>
-              <li>Awesome</li>
-              <li>This one</li>
-              <li>That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="orange button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box">
-
-            <!--TITLE-->
-            <h3 class="title blue-text">Ultimate</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$99</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list ">
-              <li>Gutter sizes</li>
-              <li>Column width</li>
-              <li>Highly customizable</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Awesome</a></li>
-              <li>This one</li>
-              <li>That one</li>
-              <li>This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="blue button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-      </div><!--END/ .pricing-table-->
-    </div><!--END/ background wrapper-->
-
-    <!--END/ pricing-table #1-->
-
-
-    <hr>
-
-
-    <h2 class="center-text h3 m-b-4">Pricing table <mark>#2</mark>- default skin colors(they change when you change the skin)</h2>
-
-    <!--START .pricing-table #2-->
-    <div class="rounded gray  p-1">
-      <div class="pricing-table row gutter-width-1">
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Basic</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$10</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Gutter sizes</a></li>
-              <li>Column width</li>
-              <li>Highly customizable</li>
-              <li>Awesome</li>
-              <li class="close">This one</li>
-              <li class="close">That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g white rounded pricing box shadow-3 ">
-
-            <!--TITLE-->
-            <h3 class="title skin-text">Premium</h3>
-
-            <!--RIBBON - featured-->
-            <span class="ribbon"></span>
-
-            <!--START .price -->
-            <div class="price skin-text">
-              <span>$48</span>
-              <small>per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>Gutter sizes</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Column width</a></li>
-              <li>Highly customizable</li>
-              <li>Awesome</li>
-              <li>This one</li>
-              <li class="close">That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="skin button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box ss-divider">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Business</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$89</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>Gutter sizes</li>
-              <li>Column width</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Highly customizable</a></li>
-              <li>Awesome</li>
-              <li>This one</li>
-              <li>That one</li>
-              <li class="close">This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-3-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Ultimate</h3>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$99</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list ">
-              <li>Gutter sizes</li>
-              <li>Column width</li>
-              <li>Highly customizable</li>
-              <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Awesome</a></li>
-              <li>This one</li>
-              <li>That one</li>
-              <li>This one</li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-      </div><!--END/ .pricing-table-->
-    </div><!--END/ background wrapper-->
-
-    <!--END/ pricing-table #2-->
-
-
-
-
-    <hr>
-
-
-
-
-    <h2 class="center-text h3 m-b-4">Pricing table <mark>#3</mark>- default skin colors(they change when you change the skin)</h2>
-
-    <!--START .pricing-table #3-->
-    <div class="rounded gray">
-      <div class="pricing-table row gutter-width-1">
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-4-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box p">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Basic</h3>
-            <span class="sub-title center-text">Our Most Popular</span>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$10</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                You can add more info
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Vivamus condimentum, quam ac luctus rutrum
-              </li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase fontart-x1" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-4-12">
-
-          <!--START PRICING BOX-->
-          <div class="g white pricing box shadow-3 p">
-
-            <!--TITLE-->
-            <h3 class="title skin-text">Premium</h3>
-            <span class="sub-title center-text">Our Most Popular</span>
-
-            <!--START .price -->
-            <div class="price skin-text">
-              <span>$48</span>
-              <small>per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>
-                <div class="f-17 title-format-2 block">List Item Title</div>
-                You can add more info
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">Pellentesque condimentum</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Vivamus condimentum, quam ac luctus rutrum
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="skin button uppercase fontart-x1" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-
-        <!--START GRID COLUMN-->
-        <div class="c-4-12">
-
-          <!--START PRICING BOX-->
-          <div class="g pricing box p">
-
-            <!--TITLE-->
-            <h3 class="title gray-text">Business</h3>
-            <span class="sub-title center-text">Our Most Popular</span>
-
-            <!--START .price -->
-            <div class="price">
-              <span>$89</span>
-              <small>Per month</small>
-            </div>
-            <!--END/ .price -->
-
-            <!--START .list -->
-            <ul class="check list">
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                You can add more info
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </li>
-              <li>
-                <div class="f-17 title-format-2 block">List Item</div>
-                Vivamus condimentum, quam ac luctus rutrum
-              </li>
-            </ul>
-            <!--END/ .list -->
-
-            <!--START .bottom -->
-            <div class="bottom">
-              <a class="button uppercase fontart-x1" href="#">Purchase</a>
-            </div>
-            <!--END/ .bottom -->
-
-          </div>
-          <!--END / PRICING BOX-->
-
-        </div>
-        <!--END / GRID COLUMN-->
-
-      </div><!--END/ .pricing-table-->
-    </div><!--END/ background wrapper-->
-
-    <!--END/ pricing-table #3-->
-
-
-
-
-    <!-- END CODE SNIPPETS ************************************************************************************************************************** -->
-
-
-
-
-  </div>
-  <!-- END/ #page -->
-
-
-
-  <!-- START global footer -->
-  <footer>
-    <section class = "container" >
-
-      <!-- START .row-->
-      <div class ="row gutter-width-2">
-
-        <!-- START GRID COLUMN-->
-        <section class ="c-5-16">
-          <!-- START .about-us widget-->
-          <div class ="g about-us widget">
-
-            <h3 class="title ">About us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, <a href="#"> demention </a> nulla mi congue orci ivamus condimentum.</p>
-
-            <section>
-              <h4 class="title">Stay connected..</h4>
-
-              <!-- START .social-connect-->
-              <ul class="social-connect">
-                <li><a href="#" data-tooltip ="Like us on facebook"><img src ="images/content/social-icons/facebook.png" alt="facebook"/></a></li>
-                <li><a href="#" data-tooltip ="Subscribe to RSS feed"><img src ="images/content/social-icons/rss.png" alt="RSS"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on twitter"><img src ="images/content/social-icons/twitter.png" alt="twitter"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Dribbble"><img src ="images/content/social-icons/dribbble.png" alt="dribbble"/></a></li>
-                <li><a href="#" data-tooltip ="Follow us on Flickr"><img src ="images/content/social-icons/Flickr.png" alt="Flickr"/></a></li>
-              </ul>
-              <!-- END/ .social-connect-->
-
-            </section>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </section>
-        <!-- END/ GRID COLUMN-->
-
-        <!-- START GRID COLUMN-->
-        <aside class ="c-6-16">
-          <!-- START .about-us widget-->
-          <div class ="g twitter widget">
-
-            <h3 class="title">Latest tweets</h3>
-            <div id = "twits">
-              Loading...
-            </div>
-
-          </div>
-          <!-- END/ .about-us widget-->
-        </aside>
-        <!-- END/ GRID COLUMN-->
-
-        <aside class="c-5-16">
-          <!-- START .flickr widget-->
-          <div class="g flickr widget animate-all">
-
-            <p class="title-format-3 gray-text f-13 m-0 ">talk to a real person</p>
-            <p class=" f-20 fontart-3 fontface-2 divider-bottom m-b-1">Call us 123-456-7890</p>
-
-            <h3 class="title"> newsletter</h3>
-            <p>Join our newsletter to get weekly updates on our nerw theme releases and theme updates</p>
-
-            <form>
-              <input placeholder="Enter your Email"> <button class="skin button">Sign up </button>
-            </form>
-
-          </div>
-          <!-- END/ .flickr widget-->
-        </aside>
-
+        <!--END/ .bottom -->
 
       </div>
-      <!-- END/ .row -->
+      <!--END / PRICING BOX-->
 
-      <!-- START #copyright-note-->
-      <div class ="row" id ="copyright-note">
+    </div>
+    <!--END / GRID COLUMN-->
 
-        <!--START #footer-nav-->
-        <div  id ="footer-nav" class="semi-left uppercase">
-          <a href="./">Home</a> <a href="#">pages</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a>
+
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box">
+
+        <!--TITLE-->
+        <h3 class="title blue-text">Ultimate</h3>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$99</span>
+          <small>Per month</small>
         </div>
-        <!--END/ #footer-nav-->
+        <!--END/ .price -->
 
-        <!--Add your copyright here-->
-        <p>Copyright &copy; 2012 Your Company. All rights reserved.</p>
+        <!--START .list -->
+        <ul class="check list ">
+          <li>Gutter sizes</li>
+          <li>Column width</li>
+          <li>Highly customizable</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Awesome</a></li>
+          <li>This one</li>
+          <li>That one</li>
+          <li>This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="blue button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
 
       </div>
-      <!-- END/ #copyright-note -->
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+  </div><!--END/ .pricing-table-->
+</div><!--END/ background wrapper-->
+
+<!--END/ pricing-table #1-->
 
 
-    </section><!-- END/ container -->
-  </footer>
-  <!-- END/ global footer -->
+<hr>
+
+
+<h2 class="center-text h3 m-b-4">Pricing table <mark>#2</mark>- default skin colors(they change when you change the skin)</h2>
+
+<!--START .pricing-table #2-->
+<div class="rounded gray  p-1">
+  <div class="pricing-table row gutter-width-1">
+
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Basic</h3>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$10</span>
+          <small>Per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Gutter sizes</a></li>
+          <li>Column width</li>
+          <li>Highly customizable</li>
+          <li>Awesome</li>
+          <li class="close">This one</li>
+          <li class="close">That one</li>
+          <li class="close">This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
+
+      <!--START PRICING BOX-->
+      <div class="g white rounded pricing box shadow-3 ">
+
+        <!--TITLE-->
+        <h3 class="title skin-text">Premium</h3>
+
+        <!--RIBBON - featured-->
+        <span class="ribbon"></span>
+
+        <!--START .price -->
+        <div class="price skin-text">
+          <span>$48</span>
+          <small>per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>Gutter sizes</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Column width</a></li>
+          <li>Highly customizable</li>
+          <li>Awesome</li>
+          <li>This one</li>
+          <li class="close">That one</li>
+          <li class="close">This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="skin button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box ss-divider">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Business</h3>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$89</span>
+          <small>Per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>Gutter sizes</li>
+          <li>Column width</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Highly customizable</a></li>
+          <li>Awesome</li>
+          <li>This one</li>
+          <li>That one</li>
+          <li class="close">This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-3-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Ultimate</h3>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$99</span>
+          <small>Per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list ">
+          <li>Gutter sizes</li>
+          <li>Column width</li>
+          <li>Highly customizable</li>
+          <li><a class = "more-info" data-tooltip="<div class='fontface-1 white-text'>You can add .more-info class and a tooltip to give more info about a section</div>">Awesome</a></li>
+          <li>This one</li>
+          <li>That one</li>
+          <li>This one</li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+  </div><!--END/ .pricing-table-->
+</div><!--END/ background wrapper-->
+
+<!--END/ pricing-table #2-->
 
 
 
-  <!-- START JS -->
 
-    <!-- jQuery Javascript Library-->
-    <script src="js/jquery.min.js"></script>
+<hr>
 
-    <!--10 JQuery plugins -concatenated - see the documentation for more info -->
-    <script src="js/essential.plugins.min.js"></script>
 
-    <!-- Custom js for GearBox HTML template-->
-    <script src="js/custom.js"></script>
 
-  <!-- END/ JS -->
 
-</body>
+<h2 class="center-text h3 m-b-4">Pricing table <mark>#3</mark>- default skin colors(they change when you change the skin)</h2>
+
+<!--START .pricing-table #3-->
+<div class="rounded gray">
+  <div class="pricing-table row gutter-width-1">
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-4-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box p">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Basic</h3>
+        <span class="sub-title center-text">Our Most Popular</span>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$10</span>
+          <small>Per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            You can add more info
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Vivamus condimentum, quam ac luctus rutrum
+          </li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase fontart-x1" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-4-12">
+
+      <!--START PRICING BOX-->
+      <div class="g white pricing box shadow-3 p">
+
+        <!--TITLE-->
+        <h3 class="title skin-text">Premium</h3>
+        <span class="sub-title center-text">Our Most Popular</span>
+
+        <!--START .price -->
+        <div class="price skin-text">
+          <span>$48</span>
+          <small>per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>
+            <div class="f-17 title-format-2 block">List Item Title</div>
+            You can add more info
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">Pellentesque condimentum</div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Vivamus condimentum, quam ac luctus rutrum
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="skin button uppercase fontart-x1" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+
+    <!--START GRID COLUMN-->
+    <div class="c-4-12">
+
+      <!--START PRICING BOX-->
+      <div class="g pricing box p">
+
+        <!--TITLE-->
+        <h3 class="title gray-text">Business</h3>
+        <span class="sub-title center-text">Our Most Popular</span>
+
+        <!--START .price -->
+        <div class="price">
+          <span>$89</span>
+          <small>Per month</small>
+        </div>
+        <!--END/ .price -->
+
+        <!--START .list -->
+        <ul class="check list">
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            You can add more info
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+          <li>
+            <div class="f-17 title-format-2 block">List Item</div>
+            Vivamus condimentum, quam ac luctus rutrum
+          </li>
+        </ul>
+        <!--END/ .list -->
+
+        <!--START .bottom -->
+        <div class="bottom">
+          <a class="button uppercase fontart-x1" href="#">Purchase</a>
+        </div>
+        <!--END/ .bottom -->
+
+      </div>
+      <!--END / PRICING BOX-->
+
+    </div>
+    <!--END / GRID COLUMN-->
+
+  </div><!--END/ .pricing-table-->
+</div><!--END/ background wrapper-->
+
+<!--END/ pricing-table #3-->
+
+
+
+
+<!-- END CODE SNIPPETS ************************************************************************************************************************** -->
+

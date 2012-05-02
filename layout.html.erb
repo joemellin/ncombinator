@@ -38,7 +38,8 @@
 
   </head>
 
-  <body id ="home">
+  <body id ="<%= @body_id %>" <% "onload=\"#{@body_onload}\"" if @body_onload %>
+
     <%= render "partials/_header.html.erb" %>
 
     <!--START #page -->
@@ -58,27 +59,6 @@
 
     </div>
     <!-- END/ #page -->
-
-
-    <!-- START - FOR DEMO ONLY FEEL FREE TO REMOVE THIS BLOCK - #sticky-sidebar -->
-    <div id = "sticky-sidebar" class="p black shadow-3 rounded animate animate-all">
-      <a id ="sticky-sidebar-toggle" class="bold black p-1 fontart-x1 rounded " href="#" data-toggle-parent-class = "opened" >skins</a>
-      <h4 class="title-format-1 white-text fontart-2">Available <span class="skin-text fontart-7">skins</span></h4>
-      <ul class="list ">
-        <li><a data-skin = "applegreen" class="white-text hover-skin-text" href="#"><mark style="background:#92BB51;">.</mark> Apple green </a></li>
-        <li><a data-skin = "orange" class="white-text hover-skin-text"  href="#"><mark style="background:#DE5906;">.</mark> Orange </a></li>
-        <li><a data-skin = "cherry" class="white-text hover-skin-text"  href="#"><mark style="background:#C32710;">.</mark> Cherry </a></li>
-        <li><a data-skin = "skyblue" class="white-text hover-skin-text"  href="#"><mark style="background:#409CC4;">.</mark> Sky Blue </a></li>
-        <li><a data-skin = "gold" class="white-text hover-skin-text"  href="#"><mark style="background:#E5BC34;">.</mark> Gold </a></li>
-        <li><a data-skin = "hotpink" class="white-text hover-skin-text"  href="#"><mark style="background:#EF5DA6;">.</mark> Hot Pink </a></li>
-        <li><a data-skin = "coolgray" class="white-text hover-skin-text"  href="#"><mark style="background:#434C5B;">.</mark> Cool gray </a></li>
-        <li><a data-skin = "royalblue" class="white-text hover-skin-text"  href="#"><mark style="background:#2D6189;">.</mark> Royal blue</a></li>
-
-      </ul>
-      <mark class="bold black">demention <br> FRAMEWORK</mark>
-    </div>
-    <!-- END - FOR DEMO ONLY FEEL FREE TO REMOVE THE ABOVE BLOCK - #sticky-sidebar -->
-
 
 
     <!-- START global footer -->
