@@ -1,0 +1,57 @@
+/*
+	GearBox HTML template
+	MSIE lt9 specific CSS file
+	This CSS file includes tweaks and hacks for IE7 and IE8
+	NOTE -Even though this CSS files has some important fixes for IE 7 , IE7 and bellow is not fully supported by the template.
+
+*/
+	
+	/*demention grid*/
+	/*Sub pixel problem? - bad ie 7 rounds the numbers up , but that's too bad , they shoud've rounded them down ,somehow*/
+	.ie-float-fix,
+	.c-custom,
+	.c-1-5,.c-2-5,.c-3-5,.c-4-5,
+	.c-1-12,.c-2-12,.c-3-12,.c-4-12,.c-5-12,.c-6-12,.c-7-12,.c-8-12,.c-9-12,.c-10-12,.c-11-12,
+	.c-1-16,.c-2-16,.c-3-16,.c-4-16,.c-5-16,.c-6-16,.c-7-16,.c-8-16,.c-9-16,.c-10-16,.c-11-16,.c-12-16,.c-13-16,.c-14-16,.c-15-16
+	{ *margin-left: -1px;}
+
+	/*Use the following classes to hide elements from IE8 ,IE7*/
+	.ie8-hide {display:none !important; *display:block !important;}
+	.ie7-hide {*display:none !important;}
+
+	#page-header .title,
+	#page-header .sub {*display:inline;}
+	
+
+	/*slider*/
+	.flex-control-nav li { /*otherwise , the slider pagination bullets arrange vertically in IE7*/
+		display:inline-block; /*IE8*/
+		zoom:1;
+		*display:inline;/*IE7*/
+	}
+	
+	/*clearfix addition*/
+	.clearfix,.row ,.box,.container,.slides { zoom: 1;} /* IE 7 */
+
+	/*grabbed from html5boilerplate */
+	/* Bicubic resizing for non-native sized IMG:
+		http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+	img { -ms-interpolation-mode: bicubic; }
+
+	
+ 
+/*START FILTER :ALPHA - opacity for IE lt 9*/
+
+	/*captions*/
+	.demention-caption		{filter: alpha(opacity=0) ;}
+	
+		.demention-caption-show,	
+		[data-image-caption]:hover .demention-caption,
+		.image:hover .demention-caption {filter: alpha(opacity=85); }
+		
+	
+	/*slider pagination -disabled*/
+	.flex-direction-nav li a.disabled {filter:alpha(opacity=30);}
+	
+	
+/*END FILTER :ALPHA - opacity for IE lt 9*/

@@ -1,0 +1,101 @@
+/* Template : demention GearBox HTML*/
+ 	
+	
+	/*selection color*/	
+	::-moz-selection	{background:#C32710;} 
+	::selection 		{background:#C32710;}
+	
+	
+	/*when targeting*/
+	:target { border-top-color: #C32710;}
+	
+	
+	/*borderS*/
+	
+	#header-logo:hover,
+	#ss-top,
+	#navigation ,
+	ul.list .current,
+	.skin-border-top	{ border-top-color:#C32710;}
+	
+	#navigation ul ul li a:hover { border-left-color:#C32710;}
+	
+	.post.excerpt:hover,
+	.skin-border,
+	.hover-skin-border:hover {border-color:#C32710;}
+	
+	
+	/*link colors*/
+	a,
+	.tabbed .tabs .current a,
+	.sub-menu .current a,
+	.widget.twitter .twitterStatus a,
+	.list .current >a,
+	#navigation > ul > .current a,
+	
+	/*font colors*/	
+	.accordion .current,
+	.tabs [data-tab].current,	
+	.post .read-more,
+		
+	/*hover state*/
+	.no-link-color a:hover,
+	.tabbed .tabs li a:hover, 
+	.widget.recent-posts li:hover a,	
+	.sub-menu li a:hover,
+	.accordion .header:hover,
+	blockquote:after,blockquote:before,
+	.old-browser body > footer a:hover,
+	.post > header .title a:hover,
+	ul.list a:hover	
+		
+	{color:#C32710;}
+	
+	
+	.skin-text,
+	.hover-skin-text:hover		
+	{color:#C32710 !important;}	
+	
+	section:hover .section-title:first-letter,
+	body > footer a:not(.button):hover	{color:#C32710;}
+ 	
+
+	/*START Skin default colors*/
+	
+	.social-connect li:hover,
+	.post:hover > header .title:after,
+	.accordion .header:hover:after,
+	.expandable .always-visible:hover:after,
+	.line-effect,
+	.flex-control-nav li a.active
+	
+	{background-color:#C32710;}
+	
+	.skin,
+	.hover-skin:hover	
+	{background-color:#C32710 !important;}
+	
+
+	.linear-skin,/*TODO*/
+	.hover-linear-skin:hover{
+		background:#72AA46 !important;
+		background:-moz-linear-gradient(#DB351C, #AD1B05) !important;
+		background:-webkit-linear-gradient(#DB351C, #AD1B05) !important;
+		background:-webkit-gradient(linear,center top,center bottom,color-stop(0%, #DB351C), color-stop(100%, #AD1B05)) !important;
+		background:-ie-linear-gradient(#DB351C, #AD1B05) !important;
+		background:-o-linear-gradient(#DB351C, #AD1B05) !important;
+		background:linear-gradient( #DB351C , #AD1B05) !important;
+	}
+	
+	.radial-skin,/*TODO*/ 
+	.hover-radial-skin:hover{
+		background:#659F3F !important;
+		background: -moz-radial-gradient(#DB351C 0, #AD1B05 100%) !important;
+		background: -webkit-gradient(radial, center center, 0, center center, 150, color-stop(0, #DB351C), color-stop(1, #AD1B05)) !important;			
+		background: -webkit-radial-gradient(#DB351C 0, #AD1B05 100%) !important;		
+		background: -ie-radial-gradient(#DB351C 0, #AD1B05 100%) !important;
+		background: -o-radial-gradient(#DB351C 0, #AD1B05 100%) !important;
+		background: radial-gradient(#DB351C 0, #AD1B05 100%) !important;
+	}
+
+/*END Skin default colors */
