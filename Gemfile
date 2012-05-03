@@ -11,3 +11,5 @@ gem "guard-shell"
 gem 'guard-livereload', '~> 0.4.0'
 
 gem "terminitor"
+
+gem "sass"
