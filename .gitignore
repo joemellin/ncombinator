@@ -1,5 +1,6 @@
 public/
 deploy/
+build/
 tmp/
 .sass-cache
 .DS_Store
