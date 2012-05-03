@@ -18,8 +18,8 @@ task :deploy => :compile do
   # verbose
   opts << "v"
 
-  # dry run
-  opts << "n"
+  # uncomment this for dry run
+  # opts << "n"
 
   puts `rsync -#{opts} --exclude-from .rsync_exclude ./build/ railsjedi@crate.dreamhost.com:/home/railsjedi/ncombinator.com`
 end
