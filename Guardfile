@@ -2,6 +2,7 @@ group 'assets' do
   # Reload the browser as asset files change
   guard 'livereload', :apply_js_live => false do
     watch(%r{^(public/).+\.(css|js|html)$})
+    watch(%r{^(build/).+\.(css|js|html)$})
   end
 
   # prevalidate coffeescript syntax on save
