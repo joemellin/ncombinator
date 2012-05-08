@@ -3,7 +3,7 @@ source :rubygems
 gem "stasis"
 
 gem 'debugger'
-
+gem 'haml'
 gem "activesupport"
 
 # setup guard

@@ -45,6 +45,7 @@ GEM
       multi_json (~> 1.0)
     guard-shell (0.4.0)
       guard (>= 0.2.0)
+    haml (3.1.5)
     highline (1.5.2)
     i18n (0.6.0)
     json_pure (1.5.4)
@@ -96,6 +97,7 @@ DEPENDENCIES
   guard-coffeescript (>= 0.4.0)
   guard-livereload (~> 0.4.0)
   guard-shell
+  haml
   pry
   sass
   stasis
