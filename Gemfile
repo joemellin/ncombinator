@@ -17,3 +17,5 @@ gem "terminitor"
 gem "sass"
 
 gem "pry"
+
+gem "jammit"
