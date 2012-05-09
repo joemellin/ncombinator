@@ -43,6 +43,9 @@ GEM
     guard-coffeescript (0.6.0)
       coffee-script (>= 2.2.0)
       guard (>= 0.8.3)
+    guard-jammit (0.3.0)
+      guard (>= 0.8.3)
+      jammit
     guard-livereload (0.4.2)
       em-websocket (>= 0.2.0)
       guard (>= 0.10.0)
@@ -104,6 +107,7 @@ DEPENDENCIES
   debugger
   guard (>= 1.0.0)
   guard-coffeescript (>= 0.4.0)
+  guard-jammit
   guard-livereload (~> 0.4.0)
   guard-shell
   haml
