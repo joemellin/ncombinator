@@ -1,18 +1,14 @@
 @import "bourbon/bourbon"
 
-@mixin open-sans($weight: normal)
-  font-family: Open Sans, sans-serif
-  font-weight: $weight
+
+@import "./signup.css.sass"
 
 @import "./slides/slide1.css.sass"
 @import "./slides/slide2.css.sass"
 @import "./slides/slide3.css.sass"
-// @import "./slides/slide4.css.sass"
-// @import "./slides/slide5.css.sass"
-// @import "./slides/slide6.css.sass"
-// @import "./slides/slide7.css.sass"
-// @import "./slides/slide8.css.sass"
-// @import "./slides/slide9.css.sass"
+@import "./slides/slide4.css.sass"
+@import "./slides/slide5.css.sass"
+@import "./slides/slide_last.css.sass"
 
 body
   position: relative
@@ -34,13 +30,41 @@ body
     text-align: center
 
   p
-    font-size: 24px
-    font-weight: 300
-    line-height: 1.75
+    font-size: 28px
+    font-weight: 100
+    line-height: 1.7
+    strong
+      font-weight: 500
 
   div[class*="slide"]
     padding: 115px 0
     border-bottom: 1px solid #eee
 
 
-#signup-box
+.do-things
+  display: block
+  width: 627px
+  height: 240px
+  margin: auto
+  background: url("../img/landing/we_do_things.png") no-repeat
+  margin-top: 150px
+  text-indent: -99999px
+
+a.logo
+  display: block
+  width: 341px
+  height: 61px
+  background: url("../img/ncombinator_logo.png") no-repeat
+  text-indent: -9999px
+
+.presentation.faq
+  padding-top: 20px
+  a.logo
+    margin-top: 0px
+
+  div[class*="slide"]
+    padding-top: 0px !important
+
+  .slide-last
+    h2
+      margin-top: 20px

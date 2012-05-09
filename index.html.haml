@@ -39,7 +39,7 @@
 
   -# SLIDE3
   .slide3
-    %h2 Ther are only <em>3</em> rules.
+    %h2 There are only <em>3</em> rules.
 
     .rule-box
       .num1-icon
@@ -76,6 +76,8 @@
       <strong>meaningful product milestone</strong> every week.
 
     .ship-icons
+      - 5.times do
+        .ship-icon
 
 
 
@@ -95,10 +97,9 @@
 
 
   -# SLIDE6
-  .slide6
+  .slide-last
     %p
-      Interested? <br>
-      Sign up and let's make this a <strong>summer to remember</strong>!
+      Interested? <strong>Sign up now.</strong><br>Let's make 2012 a summer to remember!
 
 
     #signup-box
@@ -107,74 +108,74 @@
       -# TODO: setup form fields and submit button
 
 
+    -# details
+    .details
+      %h2 The Details
 
-  -# SLIDE7
-  .slide7
-    %h2 The Details
+      .detail
+        %label Program starts on:
+        %h3 June 5th, 2012
 
-    .detail
-      %label Program starts on
-      %h3 June 5th, 2012
+      .detail
+        %label Weekly dinners:
+        %h3 Tuesday Evenings in downtown SF
 
-    .detail
-      %label Weekly dinners
-      %h3 Tuesday Evenings in downtown SF
+      .detail
+        %label Demo Day:
+        %h3 Mid August
 
-    .detail
-      %label Demo Day
-      %h3 Mid August
+      .detail
+        %label We Accept:
+        %h3 Any startup team who can ship stuff
 
-    .detail
-      %label We Accept
-      %h3 Any startup team who can ship stuff
+      .detail
+        %label Questions? Comments?
+        %h3
+          <a href="mailto:contact@ncombinator.com">Email</a> us
+          or check the <a href="/">FAQ</a>.
 
-    .detail
-      %label Questions? Comments?
-      %h3
-        <a href="mailto:contact@ncombinator.com">Email</a> us
-        or check the <a href="#faq">FAQ</a>.
+    -# schedule
+    .schedule
+      %h2 Schedule (NC S12)
 
+      .schedule-item
+        .schedule-heading
+          .schedule-date
+            Mar 31, 2012
+          .schedule-title
+            Say Hello Happy Hour
+        .schedule-body
+          <strong>4pm - Downtown SF Bar (TBD)</strong><br>
+          Meet, greet, and drink with NC startups, mentors.
 
-  .slide8
-    %h2 Schedule (NC S12)
+      .schedule-item
+        .schedule-heading
+          .schedule-date
+            Jun 5, 2012
+          .schedule-title
+            Weekly Dinner #1
+        .schedule-body
+          Get to know one other and each talk about what we're planning to build this summer.
 
-    .schedule-item
-      .schedule-heading
-        .schedule-date
-          Mar 31, 2012
-        .schedule-title
-          Say Hello Happy Hour
-      .schedule-body
-        <strong>4pm - Downtown SF Bar (TBD)</strong><br>
-        Meet, greet, and drink with NC startups, mentors.
+      .schedule-item
+        .schedule-heading
+          .schedule-date
+            Jun 12, 2012
+          .schedule-title
+            Weekly Dinner #2
+        .schedule-body
+          <strong>Prototype Day</strong><br>
+          Get something released! This week we'll want to see a prototype.
 
-    .schedule-item
-      .schedule-heading
-        .schedule-date
-          Jun 5, 2012
-        .schedule-title
-          Weekly Dinner #1
-      .schedule-body
-        Get to know one other and each talk about what we're planning to build this summer.
-
-    .schedule-item
-      .schedule-heading
-        .schedule-date
-          Jun 12, 2012
-        .schedule-title
-          Weekly Dinner #2
-      .schedule-body
-        <strong>Prototype Day</strong><br>
-        Get something released! This week we'll want to see a prototype.
-
-    .schedule-item
-      .schedule-heading
-        .schedule-date
-          Mid Aug
-        .schedule-title
-          Demo Day
-      .schedule-body
-        <strong>Venue to be announced</strong><br>
-        Sign up as a spectator for details.
+      .schedule-item
+        .schedule-heading
+          .schedule-date
+            Mid Aug
+          .schedule-title
+            Demo Day
+        .schedule-body
+          <strong>Venue to be announced</strong><br>
+          Sign up as a spectator for details.
 
 
+    %a.do-things{:href => "http://lizibot.com"} Do things.
