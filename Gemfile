@@ -16,6 +16,7 @@ gem "guard-jammit"
 gem "terminitor"
 gem "bourbon"
 gem "sass"
+gem "rdiscount"
 
 gem "pry"
 
