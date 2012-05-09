@@ -2,6 +2,7 @@ require 'haml'
 require 'coffee_script'
 require 'sass'
 require 'active_support/all'
+require 'bourbon'
 
 ignore /\/_.*/
 layout "layout.html.erb"

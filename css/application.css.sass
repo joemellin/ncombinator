@@ -1,10 +1,12 @@
+@import "bourbon/bourbon"
+
 @mixin open-sans($weight: normal)
   font-family: Open Sans, sans-serif
   font-weight: $weight
 
 @import "./slides/slide1.css.sass"
 @import "./slides/slide2.css.sass"
-// @import "./slides/slide3.css.sass"
+@import "./slides/slide3.css.sass"
 // @import "./slides/slide4.css.sass"
 // @import "./slides/slide5.css.sass"
 // @import "./slides/slide6.css.sass"
@@ -28,11 +30,13 @@ body
   padding: 0 30px
   padding-bottom: 20px
 
+  h1, h2, h3, p
+    text-align: center
+
   p
     font-size: 24px
     font-weight: 300
     line-height: 1.75
-    text-align: center
 
   div[class*="slide"]
     padding: 115px 0

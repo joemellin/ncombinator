@@ -9,6 +9,8 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.2.8)
+    bourbon (1.4.0)
+      sass (>= 3.1)
     coderay (0.9.8)
     coffee-script (2.2.0)
       coffee-script-source
@@ -104,6 +106,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  bourbon
   debugger
   guard (>= 1.0.0)
   guard-coffeescript (>= 0.4.0)
