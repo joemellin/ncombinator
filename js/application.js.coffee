@@ -1,4 +1,4 @@
 $ = jQuery
 $(document).on
   ready: ->
-    console.log("hi ncombinator!")
+    console.log("ncombinator says hi!")
