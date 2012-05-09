@@ -109,13 +109,32 @@
       Interested? <strong>Sign up now.</strong><br>Let's make 2012 a summer to remember!
 
 
-    #signup-box
+    %form#signup-box{:href => "#", :method => "post"}
       %h1.mini-logo NCombinator
 
       -# TODO: setup form fields and submit button
-      %form
-        .actions
-          .submit Join
+
+      .fields
+        %input.example{:type => "text", :name => "email", :title => "Your Email"}
+        %input.example{:type => "text", :name => "name", :title => "Your Name"}
+      .pick
+        %h3 I'm interested in being a:
+        %ul
+          %li
+            %label.startup-type{"data-type" => "startup"}
+              Startup
+
+          %li
+            %label.mentor-type{"data-type" => "mentor"}
+              Mentor
+
+          %li
+            %label.spectator-type.on{"data-type" => "spectator"}
+              Spectator
+
+      .actions
+        .success-msg We'll contact you soon to get things started. Thanks!
+        .submit Join
 
     -# details
     .details
