@@ -9,6 +9,10 @@ layout "layout.html.erb"
 
 PROJECT_ROOT = File.dirname(__FILE__)
 
+before "skrollr.html.erb" do
+  layout "no_layout.html.erb"
+end
+
 helpers do
   def html_files
     results = []
