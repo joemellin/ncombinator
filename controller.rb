@@ -1,3 +1,5 @@
+require 'haml'
+require 'coffee_script'
 require 'sass'
 require 'active_support/all'
 
