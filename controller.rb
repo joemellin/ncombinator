@@ -5,7 +5,7 @@ require 'active_support/all'
 require 'bourbon'
 
 ignore /\/_.*/
-layout "layout.html.erb"
+layout "layout_parallax.html.erb"
 layout "skrollr.html.erb" => "no_layout.html.erb"
 layout "parallax.html.erb" => "no_layout.html.erb"
 
