@@ -18,6 +18,12 @@ $(document).on
         selected.push($(this).data("type"))
       selected
 
+    blurSignupFields = ->
+      setTimeout ->
+        $("#signup-box input[type=text]").blur()
+      , 500
+
+
     $("#signup-box").each (index) ->
       signup = $(this)
 
@@ -33,10 +39,8 @@ $(document).on
       signup.submit (e) ->
         e.preventDefault()
 
-        return if signup.data("in-progress")
-        signup.data("in-progress", "true")
-
         console.log("Submitting form")
+        signup.find(".success-msg").hide()
 
         # post data to parse
         postData =
@@ -44,8 +48,22 @@ $(document).on
           email: signup.find("input[name=email]").not(".hint").val()
           selectedTypes: checkSelected()
 
+        if !postData.email
+          alert("Please enter a valid email to sign up. Thanks!")
+          blurSignupFields()
+          return
+
+        if !postData.selectedTypes or postData.selectedTypes.length == 0
+          alert("Which roles are you intersted in?")
+          blurSignupFields()
+          return
+
+        return if signup.data("in-progress")
+        signup.data("in-progress", "true")
+
         $.parse.post 'signups_prod', postData, (json) ->
           console.log("Posted signup")
           signup.find("input[type=text]").val("")
-          signup.find(".success-msg").show()
+          signup.find(".success-msg").fadeIn()
           signup.data("in-progress", null)
+          blurSignupFields()
