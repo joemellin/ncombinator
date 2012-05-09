@@ -6,12 +6,10 @@ require 'bourbon'
 
 ignore /\/_.*/
 layout "layout.html.erb"
+layout "skrollr.html.erb" => "no_layout.html.erb"
+layout "parallax.html.erb" => "no_layout.html.erb"
 
 PROJECT_ROOT = File.dirname(__FILE__)
-
-before "skrollr.html.erb" do
-  layout "no_layout.html.erb"
-end
 
 helpers do
   def html_files
