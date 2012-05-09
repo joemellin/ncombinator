@@ -1,2 +1,42 @@
+@mixin open-sans($weight: normal)
+  font-family: Open Sans, sans-serif
+  font-weight: $weight
+
+@import "./slides/slide1.css.sass"
+@import "./slides/slide2.css.sass"
+// @import "./slides/slide3.css.sass"
+// @import "./slides/slide4.css.sass"
+// @import "./slides/slide5.css.sass"
+// @import "./slides/slide6.css.sass"
+// @import "./slides/slide7.css.sass"
+// @import "./slides/slide8.css.sass"
+// @import "./slides/slide9.css.sass"
+
 body
-  padding-top: 20px
+  position: relative
+  background-color: #EAEAEA
+  font-family: Open Sans, sans-serif
+
+.presentation
+  color: #5A5A5A
+  width: 784px
+  margin: auto
+  background-color: #fff
+  min-height: 100%
+  box-shadow: 0 0 20px rgba(0,0,0,0.1)
+  box-sizing: border-box
+  padding: 0 30px
+  padding-bottom: 20px
+
+  p
+    font-size: 24px
+    font-weight: 300
+    line-height: 1.75
+    text-align: center
+
+  div[class*="slide"]
+    padding: 115px 0
+    border-bottom: 1px solid #eee
+
+
+#signup-box

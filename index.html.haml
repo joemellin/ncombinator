@@ -1,8 +1,182 @@
+.presentation
 
-.container
-  %img{:src => "./img/ncombinator_logo.png"}
-  %h2 coming soon, stay tuned!
+  -# SLIDE1
+  .slide1
+
+    %h1 So, here's the deal.
+    .arrow-icon
+
+    %h2 You've got a <em>killer idea</em> and a <em>ninja team</em>.
+
+    %p.icons
+      %span.lightbulb-icon
+      %span.plus-icon +
+      %span.ninja-icon
+
+    %p
+      You want to make a difference in the world with your ideas, <br>
+      build an amazing product, and create a huge company.
 
 
-  - 100.times do
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  -# SLIDE2
+  .slide2
+    %p
+      Imagine, a brother(or sister)hood of other ninjas, just like <br>
+      your team, giving you feedback and helping you iterate.
+
+
+    .ninjas
+      - 3.times do |row|
+        - 10.times do |col|
+          .ninja{add_class("red", :if => (row == 2 and col == 2))}
+        %br
+
+
+    %p
+      You'd stay accountable to each other.  Get advice, motivation, <br>
+      and user feedback on your products when necessary.
+
+
+  -# SLIDE3
+  .slide3
+    %h2 Ther are only <em>3</em> rules.
+
+    .rule-box
+      .num1-icon
+      %h1 Ship.
+      .note-icon
+      %p
+        When the rubber meets the road, all that matters is shipping good product that comes into
+        contact with your users.   Typing in "deploy", and learning from what happens next.
+        Our weekly schedule is the unspoken "gentle peer pressure" needed to give you that kickstart.
+
+    .rule-box
+      .num2-icon
+      %h1 Support.
+      .heart-icon
+      %p
+        The value of community is priceless.  We are a community of startup founders who care about
+        building great products as much as you do.   We all want great feedback.   Join forces and help each
+        other in peer UX reviews.
+
+
+    .rule-box
+      .num3-icon
+      %h1 Share.
+      .graph-icon
+      %p
+        Learn from others by sharing what's working and what isn't -- whether it's understanding the fine print
+        on your term sheets, applying analytical rigor to UX, or scaling your noSQL data store, share with others
+        in a supportive, secure community.  Information is off the record and secrets are safe within our network.
+
+
+
+  -# SLIDE4
+  .slide4
+    %p
+      We expect our members to ship a <br>
+      <strong>meaningful product milestone</strong> every week.
+
+    .ship-icons
+
+
+
+  -# SLIDE5
+  .slide5
+    %p
+      Yeah, it's sort of like<br>
+      that other thing.
+
+    %p
+      Except we invest <strong>no money</strong>.<br>
+      And take <strong>no equity</strong>.
+
+    %p
+      <strong>Just Community.</strong>
+
+
+
+  -# SLIDE6
+  .slide6
+    %p
+      Interested? <br>
+      Sign up and let's make this a <strong>summer to remember</strong>!
+
+
+    #signup-box
+      %h1.logo NCombinator
+
+      -# TODO: setup form fields and submit button
+
+
+
+  -# SLIDE7
+  .slide7
+    %h2 The Details
+
+    .detail
+      %label Program starts on
+      %h3 June 5th, 2012
+
+    .detail
+      %label Weekly dinners
+      %h3 Tuesday Evenings in downtown SF
+
+    .detail
+      %label Demo Day
+      %h3 Mid August
+
+    .detail
+      %label We Accept
+      %h3 Any startup team who can ship stuff
+
+    .detail
+      %label Questions? Comments?
+      %h3
+        <a href="mailto:contact@ncombinator.com">Email</a> us
+        or check the <a href="#faq">FAQ</a>.
+
+
+  .slide8
+    %h2 Schedule (NC S12)
+
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Mar 31, 2012
+        .schedule-title
+          Say Hello Happy Hour
+      .schedule-body
+        <strong>4pm - Downtown SF Bar (TBD)</strong><br>
+        Meet, greet, and drink with NC startups, mentors.
+
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 5, 2012
+        .schedule-title
+          Weekly Dinner #1
+      .schedule-body
+        Get to know one other and each talk about what we're planning to build this summer.
+
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 12, 2012
+        .schedule-title
+          Weekly Dinner #2
+      .schedule-body
+        <strong>Prototype Day</strong><br>
+        Get something released! This week we'll want to see a prototype.
+
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Mid Aug
+        .schedule-title
+          Demo Day
+      .schedule-body
+        <strong>Venue to be announced</strong><br>
+        Sign up as a spectator for details.
+
+
