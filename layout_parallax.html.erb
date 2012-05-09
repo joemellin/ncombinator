@@ -32,7 +32,10 @@
   window.onload = function() {
     skrollr.init({
       //This will look better in next release
-      maxKeyFrame: document.body.scrollHeight - document.documentElement.clientHeight
+      maxKeyFrame: document.body.scrollHeight - document.documentElement.clientHeight,
+      render: function(data) {
+        console.log("curTop: "+data.curTop + ", lastTop: "+data.lastTop+", maxTop: "+data.maxTop+", direction: "+data.direction);
+      }
     });
   }
   </script>
