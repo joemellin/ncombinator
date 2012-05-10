@@ -2,9 +2,9 @@
 
 -# SLIDE1
 #start_slide.scrollblock
+  %a{:name => "start"}
   #start_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "start"}
     %h1 So, here's the deal.
 
     %h2#idea_team You've got a <em id="killer">killer idea</em> <var id="and">and a</var> <em id="ninja">ninja team</em>.
@@ -22,11 +22,11 @@
 
 -# SLIDE2
 #imagine_slide.slide2.scrollblock
+  %a{:name => "imagine"}
   #imagine_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "imagine"}
     %p
-      Now imagine, a brother(or sister)hood of other ninjas, <br>
+      Imagine a brother(or sister)hood of other ninjas, <br>
       just like your team, giving you feedback and helping you iterate.
 
 
@@ -43,9 +43,9 @@
 
 -# SLIDE3
 #rules_slide.scrollblock
+  %a{:name => "rules"}
   #rules_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "rules"}
     %h2 Say there were only <em>3</em> rules.
 
     .rule-box
@@ -77,9 +77,9 @@
 
 -# SLIDE4
 #ship_slide.scrollblock
+  %a{:name => "ship"}
   #ship_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "ship"}
     %p
       And <strong>each team</strong> would be expected to ship a <br>
       <strong>meaningful product milestone</strong> every week.
@@ -91,9 +91,9 @@
 
 -# SLIDE5
 #compare_slide.scrollblock
+  %a{:name => "compare"}
   #compare_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "compare"}
     %p
       Yeah, it's sort of like <em class='yc'>that other thing</em>.
 
@@ -109,13 +109,13 @@
 -# SLIDE6
 -# signup for
 #signup_slide.scrollblock
+  %a{:name => "signup"}
   #signup_slide_bg.slide-bg
   .scroll-content
     %p
       Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
-    %a{:name => "signup"}
     %p
-      Interested? <strong>Sign up now.</strong><br>Let's build something amazing together!
+      Interested? <strong>Sign up.</strong><br>Let's build something amazing.
 
 
     %form#signup-box{:href => "/signup", :method => "POST"}
@@ -147,9 +147,9 @@
 
 -# details
 #details_slide.scrollblock
+  %a{:name => "details"}
   #details_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "details"}
     %h2.section The Details
 
     .detail
@@ -176,11 +176,11 @@
       %h3
         <a href="mailto:contact@ncombinator.com">Email</a> us
         or check the <a href="#faq">FAQ</a>.
-        
+
 #faq_slide.scrollblock
+  %a{:name => "faq"}
   #faq_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "faq"}
     %h2.section Frequently Asked Questions
 
     -#
@@ -285,9 +285,9 @@
 
 -# schedule
 #schedule_slide.scrollblock
+  %a{:name => "schedule"}
   #schedule_slide_bg.slide-bg
   .scroll-content
-    %a{:name => "schedule"}
     %h2.section Schedule (S12)
 
     .schedule-item
@@ -444,5 +444,5 @@
 
 .scrollblock.do-things
   .scroll-content
-    %a.rich{:href => "http://lizibot.com"} Do things.
+    %a.rich{:href => "#signup"} Do things.
 
