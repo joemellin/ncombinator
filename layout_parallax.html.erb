@@ -35,13 +35,7 @@
       maxKeyFrame: document.body.scrollHeight - document.documentElement.clientHeight,
       render: function(data) {
         console.log("curTop: "+data.curTop + ", lastTop: "+data.lastTop+", maxTop: "+data.maxTop+", direction: "+data.direction);
-      },
-      easing: {
-          WTF: Math.random,
-          inverted: function(p) {
-            return 1-p;
-          }
-        }
+      }
     });
   }
   </script>
