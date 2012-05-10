@@ -74,14 +74,24 @@ $(document).on
       enablePin: true
 
     # assign function to add behavior for onBlockChange event
+    slideBackgrounds = $(".slide-bg")
     scrollorama.onBlockChange ->
       i = scrollorama.blockIndex
+      currentBlock = scrollorama.settings.blocks.eq(i)
+      currentBlockId = currentBlock.attr('id')
+
+      # set console
       $('#console')
         .css('display','block')
-        .text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'))
+        .text('onBlockChange | blockIndex:'+i+' | current block: '+currentBlockId)
 
-    scrollorama.animate('#compare_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
-    scrollorama.animate('#signup_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
+      currentBackground = currentBlock.find(".slide-bg")
+      slideBackgrounds.filter(":visible").not(currentBackground).fadeOut("slow")
+      currentBackground.not(":visible").fadeIn("slow")
+
+
+    # scrollorama.animate('#compare_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
+    # scrollorama.animate('#signup_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
 
     # # lettering.js for coolness
     # $('#title').lettering()
