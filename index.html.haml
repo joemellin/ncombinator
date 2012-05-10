@@ -1,9 +1,10 @@
+%p#console
 = render "_slide_backgrounds.html.erb"
 .presentation
 
   -# SLIDE1
-  .slide1
-    %a{:name => "start"}
+  %a{:name => "start"}
+  #start_slide.slide1.scrollblock
     %h1 So, here's the deal.
     .arrow-icon
 
@@ -20,8 +21,8 @@
 
 
   -# SLIDE2
-  .slide2
-    %a{:name => "imagine"}
+  %a{:name => "imagine"}
+  #imagine_slide.slide2.scrollblock
     %p
       Now imagine, a brother(or sister)hood of other ninjas, <br>
       just like your team, giving you feedback and helping you iterate.
@@ -40,8 +41,8 @@
 
 
   -# SLIDE3
-  .slide3
-    %a{:name => "rules"}
+  %a{:name => "rules"}
+  #rules_slide.slide3.scrollblock
     %h2 Say there were only <em>3</em> rules.
 
     .rule-box
@@ -74,8 +75,8 @@
 
 
   -# SLIDE4
-  .slide4
-    %a{:name => "ship"}
+  %a{:name => "ship"}
+  #ship_slide.slide4.scrollblock
     %p
       And <strong>each team</strong> would be expected to ship a <br>
       <strong>meaningful product milestone</strong> every week.
@@ -87,8 +88,8 @@
 
 
   -# SLIDE5
-  .slide5
-    %a{:name => "compare"}
+  %a{:name => "compare"}
+  #compare_slide.slide5.scrollblock
     %p
       Yeah, it's sort of like <em class='yc'>that other thing</em>.
 
@@ -103,43 +104,45 @@
 
   -# SLIDE6
   .slide-last
-    %p
-      Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
-    %a{:name => "signup"}
-    %p
-      Interested? <strong>Sign up now.</strong><br>Let's build something amazing together!
+    -# signup for
+    #signup_section.signup.scrollbox
+      %p
+        Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
+      %a{:name => "signup"}
+      %p
+        Interested? <strong>Sign up now.</strong><br>Let's build something amazing together!
 
 
-    %form#signup-box{:href => "/signup", :method => "POST"}
-      %h1.mini-logo NCombinator
+      %form#signup-box{:href => "/signup", :method => "POST"}
+        %h1.mini-logo NCombinator
 
-      -# TODO: setup form fields and submit button
+        -# TODO: setup form fields and submit button
 
-      .fields
-        %input.example{:type => "text", :name => "email", :title => "Your Email"}
-        %input.example{:type => "text", :name => "name", :title => "Your Name"}
-      .pick
-        %h3 I'm interested in being a:
-        %ul
-          %li
-            %label.startup-type{"data-type" => "startup"}
-              Startup
+        .fields
+          %input.example{:type => "text", :name => "email", :title => "Your Email"}
+          %input.example{:type => "text", :name => "name", :title => "Your Name"}
+        .pick
+          %h3 I'm interested in being a:
+          %ul
+            %li
+              %label.startup-type{"data-type" => "startup"}
+                Startup
 
-          %li
-            %label.mentor-type{"data-type" => "mentor"}
-              Mentor
+            %li
+              %label.mentor-type{"data-type" => "mentor"}
+                Mentor
 
-          %li
-            %label.spectator-type.on{"data-type" => "spectator"}
-              Spectator
+            %li
+              %label.spectator-type.on{"data-type" => "spectator"}
+                Spectator
 
-      .actions
-        .success-msg We'll contact you soon to get things started. Thanks!
-        .submit Join
+        .actions
+          .success-msg We'll contact you soon to get things started. Thanks!
+          .submit Join
 
     -# details
-    .details
-      %a{:name => "details"}
+    %a{:name => "details"}
+    #details_section.details.scrollblock
       %h2 The Details
 
       .detail
@@ -169,7 +172,7 @@
 
     -# schedule
     %a{:name => "schedule"}
-    .schedule
+    #schedule_section.schedule.scrollblock
       %h2 Schedule (S12)
 
       .schedule-item
@@ -324,7 +327,7 @@
           <strong>We wrap things up and figure out what's next!</strong>
 
     %a{:name => "faq"}
-    .faq
+    #faq_section.faq.scrollblock
       .slide-last
         %h2 Frequently Asked Questions
 
