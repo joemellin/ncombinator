@@ -82,7 +82,6 @@ $(document).on
 
       # set console
       $('#console')
-        .css('display','block')
         .text('onBlockChange | blockIndex:'+i+' | current block: '+currentBlockId)
 
       currentBackground = currentBlock.find(".slide-bg")
