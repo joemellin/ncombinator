@@ -23,22 +23,10 @@
 
   <script src="./js/jquery-1.7.1.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" src="./skrollr/skrollr.js"></script>
   <script src="./js/jquery.example.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/jquery.parse.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/application.js" type="text/javascript" charset="utf-8"></script>
 
-  <script type="text/javascript">
-  window.onload = function() {
-    skrollr.init({
-      //This will look better in next release
-      maxKeyFrame: document.body.scrollHeight - document.documentElement.clientHeight,
-      render: function(data) {
-        console.log("curTop: "+data.curTop + ", lastTop: "+data.lastTop+", maxTop: "+data.maxTop+", direction: "+data.direction);
-      }
-    });
-  }
-  </script>
 </body>
 
 </html>
