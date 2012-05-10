@@ -16,21 +16,25 @@ body
   background-color: #EAEAEA
   font-family: Open Sans, sans-serif
 
+#column_bg
+  width: 784px
+  left: 0
+  right: 0
+  margin: auto
+  height: 100%
+  position: fixed
+  z-index: 0
+  background-color: #fff
+  top: 0
+  bottom: 0
+  box-shadow: 0 0 20px rgba(0,0,0,0.1)
+
+
 .presentation
   color: #5A5A5A
-  width: 784px
-  margin: auto
-  background-color: #fff
-  min-height: 100%
-  box-shadow: 0 0 20px rgba(0,0,0,0.1)
-  box-sizing: border-box
-  padding: 0 30px
-  padding-bottom: 20px
   position: relative
-  z-index: 100
   h1, h2, h3, p
     text-align: center
-
   p
     font-size: 26px
     line-height: 1.7
@@ -43,17 +47,26 @@ body
 
   div[class*="slide"]
     padding: 115px 0
-    border-bottom: 1px solid #eee
+    // border-bottom: 1px solid #eee
 
+  .scrollblock
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    width: 723px
 
 .do-things
-  display: block
-  width: 627px
-  height: 240px
-  margin: auto
-  background: url("../img/landing/we_do_things.png") no-repeat
-  margin-top: 150px
-  text-indent: -99999px
+  .scroll-content
+    padding-bottom: 100px
+  .rich
+    display: block
+    width: 627px
+    height: 240px
+    margin: auto
+    background: url("../img/landing/we_do_things.png") no-repeat
+    margin-top: 150px
+    text-indent: -99999px
 
 a.logo
   display: block

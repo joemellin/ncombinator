@@ -16,7 +16,8 @@
 
   .details
     text-align: left
-    margin: 0 50px
+    .scroll-content
+      margin: 0 50px
     h2
       margin-bottom: 15px
     .detail
@@ -44,9 +45,10 @@
           width: 240px
 
   .schedule
-    margin: 0 50px
     h2
       margin-bottom: 30px
+    .scroll-content
+      margin: 0 50px
     .schedule-heading
       +clearfix
       width: 630px
@@ -80,20 +82,8 @@
 
   //
   .faq
-    margin-left: 50px
-    margin-right: 50px
-    padding-top: 20px
-    a.logo
-      margin-top: 0px
-
-    div[class*="slide"]
-      padding-top: 0px !important
-
-    .slide-last
-      padding-top: 20px
-      h2
-        margin-top: 20px
-        margin-bottom: 20px
+    .scroll-content
+      margin: 0 50px
     .question
       margin-bottom: 30px
       h3
@@ -117,3 +107,5 @@
         margin-bottom: 20px
         font-weight: 300
         letter-spacing: 0
+  
+  .do-things

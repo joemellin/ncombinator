@@ -67,13 +67,11 @@ $(document).on
           signup.data("in-progress", null)
           blurSignupFields()
 
-
-
     # SCROLLORAMA!
     # initialize the plugin, pass in the class selector for the sections of content (blocks)
     scrollorama = $.scrollorama
       blocks: '.scrollblock'
-      enablePin: false
+      enablePin: true
 
     # assign function to add behavior for onBlockChange event
     scrollorama.onBlockChange ->
@@ -81,6 +79,8 @@ $(document).on
       $('#console')
         .css('display','block')
         .text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'))
+
+    scrollorama.animate('#compare_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
 
     # # lettering.js for coolness
     # $('#title').lettering()
