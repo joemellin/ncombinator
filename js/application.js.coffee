@@ -81,6 +81,7 @@ $(document).on
         .text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'))
 
     scrollorama.animate('#compare_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
+    scrollorama.animate('#signup_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
 
     # # lettering.js for coolness
     # $('#title').lettering()

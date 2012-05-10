@@ -1,15 +1,17 @@
 @import "bourbon/bourbon"
 
 
-@import "./slides/slide1.css.sass"
-@import "./slides/slide2.css.sass"
-@import "./slides/slide3.css.sass"
-@import "./slides/slide4.css.sass"
-@import "./slides/slide5.css.sass"
-@import "./slides/slide_last.css.sass"
+@import "./slides/slide01_start.css.sass"
+@import "./slides/slide02_imagine.css.sass"
+@import "./slides/slide03_rules.css.sass"
+@import "./slides/slide04_ship.css.sass"
+@import "./slides/slide05_compare.css.sass"
+@import "./slides/slide06_signup.css.sass"
+@import "./slides/slide07_details.css.sass"
+@import "./slides/slide08_schedule.css.sass"
+@import "./slides/slide09_faq.css.sass"
 
-@import "./slides/signup.css.sass"
-@import "./slides/slide_backgrounds.css.sass"
+@import "./slides/backgrounds.css.sass"
 
 body
   position: relative
@@ -23,7 +25,7 @@ body
   margin: auto
   height: 100%
   position: fixed
-  z-index: 0
+  z-index: 100
   background-color: #fff
   top: 0
   bottom: 0
@@ -45,20 +47,20 @@ body
     strong
       font-weight: bold
 
-  div[class*="slide"]
-    padding: 115px 0
-    // border-bottom: 1px solid #eee
-
   .scrollblock
     margin-left: auto
     margin-right: auto
     left: 0
     right: 0
     width: 723px
+    padding: 115px 0
+    .scroll-content
+      z-index: 1000
+      position: relative
 
 .do-things
   .scroll-content
-    padding-bottom: 100px
+    padding-bottom: 30px
   .rich
     display: block
     width: 627px

@@ -3,9 +3,10 @@
 #column_bg
 
 -# SLIDE1
-%a{:name => "start"}
-#start_slide.slide1.scrollblock
+#start_slide.scrollblock
+  #start_slide_bg.slide-bg
   .scroll-content
+    %a{:name => "start"}
     %h1 So, here's the deal.
     .arrow-icon
 
@@ -22,9 +23,10 @@
 
 
 -# SLIDE2
-%a{:name => "imagine"}
 #imagine_slide.slide2.scrollblock
+  #imagine_slide_bg.slide-bg
   .scroll-content
+    %a{:name => "imagine"}
     %p
       Now imagine, a brother(or sister)hood of other ninjas, <br>
       just like your team, giving you feedback and helping you iterate.
@@ -43,9 +45,10 @@
 
 
 -# SLIDE3
-%a{:name => "rules"}
-#rules_slide.slide3.scrollblock
+#rules_slide.scrollblock
+  #rules_slide_bg.slide-bg
   .scroll-content
+    %a{:name => "rules"}
     %h2 Say there were only <em>3</em> rules.
 
     .rule-box
@@ -78,9 +81,10 @@
 
 
 -# SLIDE4
-%a{:name => "ship"}
-#ship_slide.slide4.scrollblock
+#ship_slide.scrollblock
+  #ship_slide_bg.slide-bg
   .scroll-content
+    %a{:name => "ship"}
     %p
       And <strong>each team</strong> would be expected to ship a <br>
       <strong>meaningful product milestone</strong> every week.
@@ -91,10 +95,10 @@
 
 
 -# SLIDE5
-%a{:name => "compare"}
-#compare_slide.slide5.scrollblock
+#compare_slide.scrollblock
   #compare_slide_bg.slide-bg
   .scroll-content
+    %a{:name => "compare"}
     %p
       Yeah, it's sort of like <em class='yc'>that other thing</em>.
 
@@ -108,331 +112,334 @@
 
 
 -# SLIDE6
-.slide-last
-  -# signup for
-  #signup_section.signup.scrollblock
-    .scroll-content
-      %p
-        Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
-      %a{:name => "signup"}
-      %p
-        Interested? <strong>Sign up now.</strong><br>Let's build something amazing together!
+-# signup for
+#signup_slide.scrollblock
+  #signup_slide_bg.slide-bg
+  .scroll-content
+    %p
+      Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
+    %a{:name => "signup"}
+    %p
+      Interested? <strong>Sign up now.</strong><br>Let's build something amazing together!
 
 
-      %form#signup-box{:href => "/signup", :method => "POST"}
-        %h1.mini-logo NCombinator
+    %form#signup-box{:href => "/signup", :method => "POST"}
+      %h1.mini-logo NCombinator
 
-        -# TODO: setup form fields and submit button
+      -# TODO: setup form fields and submit button
 
-        .fields
-          %input.example{:type => "text", :name => "email", :title => "Your Email"}
-          %input.example{:type => "text", :name => "name", :title => "Your Name"}
-        .pick
-          %h3 I'm interested in being a:
-          %ul
-            %li
-              %label.startup-type{"data-type" => "startup"}
-                Startup
+      .fields
+        %input.example{:type => "text", :name => "email", :title => "Your Email"}
+        %input.example{:type => "text", :name => "name", :title => "Your Name"}
+      .pick
+        %h3 I'm interested in being a:
+        %ul
+          %li
+            %label.startup-type{"data-type" => "startup"}
+              Startup
 
-            %li
-              %label.mentor-type{"data-type" => "mentor"}
-                Mentor
+          %li
+            %label.mentor-type{"data-type" => "mentor"}
+              Mentor
 
-            %li
-              %label.spectator-type.on{"data-type" => "spectator"}
-                Spectator
+          %li
+            %label.spectator-type.on{"data-type" => "spectator"}
+              Spectator
 
-        .actions
-          .success-msg We'll contact you soon to get things started. Thanks!
-          .submit Join
+      .actions
+        .success-msg We'll contact you soon to get things started. Thanks!
+        .submit Join
 
-  -# details
-  %a{:name => "details"}
-  #details_section.details.scrollblock
-    .scroll-content
-      %h2 The Details
+-# details
+#details_slide.scrollblock
+  #details_slide_bg.slide-bg
+  .scroll-content
+    %a{:name => "details"}
+    %h2 The Details
 
-      .detail
-        %label Program starts on:
-        %h3 June 5th, 2012
+    .detail
+      %label Program starts on:
+      %h3 June 5th, 2012
 
-      .detail
-        %label Weekly dinners:
-        %h3
-          Tuesday Evenings in downtown SF
-          <span class="sep">- or -</span>
-          Check in online.
+    .detail
+      %label Weekly dinners:
+      %h3
+        Tuesday Evenings in downtown SF
+        <span class="sep">- or -</span>
+        Check in online.
 
-      .detail
-        %label Demo Day:
-        %h3 Mid August
+    .detail
+      %label Demo Day:
+      %h3 Mid August
 
-      .detail
-        %label We Accept:
-        %h3 Any startup team who can ship stuff.
+    .detail
+      %label We Accept:
+      %h3 Any startup team who can ship stuff.
 
-      .detail
-        %label Questions? Comments?
-        %h3
-          <a href="mailto:contact@ncombinator.com">Email</a> us
-          or check the <a href="#faq">FAQ</a>.
+    .detail
+      %label Questions? Comments?
+      %h3
+        <a href="mailto:contact@ncombinator.com">Email</a> us
+        or check the <a href="#faq">FAQ</a>.
 
-  -# schedule
-  %a{:name => "schedule"}
-  #schedule_section.schedule.scrollblock
-    .scroll-content
-      %h2 Schedule (S12)
+-# schedule
+#schedule_slide.scrollblock
+  #schedule_section_bg.slide-bg
+  .scroll-content
+    %a{:name => "schedule"}
+    %h2 Schedule (S12)
 
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            May 31, 2012
-          .schedule-title
-            Say Hello Happy Hour
-        .schedule-body
-          <strong>4pm - Downtown SF Bar (TBD)</strong><br>
-          Meet, greet, and drink with startups, mentors.
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          May 31, 2012
+        .schedule-title
+          Say Hello Happy Hour
+      .schedule-body
+        <strong>4pm - Downtown SF Bar (TBD)</strong><br>
+        Meet, greet, and drink with startups, mentors.
 
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jun 5, 2012
-          .schedule-title
-            Weekly Dinner #1
-        .schedule-body
-          Get to know one other and each talk about what we're planning to build this summer.
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 5, 2012
+        .schedule-title
+          Weekly Dinner #1
+      .schedule-body
+        Get to know one other and each talk about what we're planning to build this summer.
 
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jun 12, 2012
-          .schedule-title
-            Weekly Dinner #2
-        .schedule-body
-          <strong>Prototype Day</strong><br>
-          Get something released! This week we'll want to see a prototype.
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jun 19, 2012
-          .schedule-title
-            Weekly Dinner #3
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jun 26, 2012
-          .schedule-title
-            Weekly Dinner #4
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jul 3, 2012
-          .schedule-title
-            Weekly Dinner #5
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jul 10, 2012
-          .schedule-title
-            Weekly Dinner #6
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jul 17, 2012
-          .schedule-title
-            Weekly Dinner #7
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jul 24, 2012
-          .schedule-title
-            Weekly Dinner #8
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Jul 31, 2012
-          .schedule-title
-            Weekly Dinner #9
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Aug 7, 2012
-          .schedule-title
-            Weekly Dinner #10
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Aug 14, 2012
-          .schedule-title
-            Weekly Dinner #11
-        .schedule-body.empty
-        -#   <strong>Speaker to be announced soon!</strong>
-      -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 12, 2012
+        .schedule-title
+          Weekly Dinner #2
+      .schedule-body
+        <strong>Prototype Day</strong><br>
+        Get something released! This week we'll want to see a prototype.
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 19, 2012
+        .schedule-title
+          Weekly Dinner #3
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jun 26, 2012
+        .schedule-title
+          Weekly Dinner #4
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jul 3, 2012
+        .schedule-title
+          Weekly Dinner #5
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jul 10, 2012
+        .schedule-title
+          Weekly Dinner #6
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jul 17, 2012
+        .schedule-title
+          Weekly Dinner #7
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jul 24, 2012
+        .schedule-title
+          Weekly Dinner #8
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Jul 31, 2012
+        .schedule-title
+          Weekly Dinner #9
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Aug 7, 2012
+        .schedule-title
+          Weekly Dinner #10
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Aug 14, 2012
+        .schedule-title
+          Weekly Dinner #11
+      .schedule-body.empty
+      -#   <strong>Speaker to be announced soon!</strong>
+    -#
 
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Mid Aug
-          .schedule-title
-            Demo Day
-        .schedule-body
-          <strong>Venue to be announced</strong><br>
-          Sign up as a spectator for details.
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Mid Aug
+        .schedule-title
+          Demo Day
+      .schedule-body
+        <strong>Venue to be announced</strong><br>
+        Sign up as a spectator for details.
 
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Aug 21, 2012
-          .schedule-title
-            Weekly Dinner #12
-        .schedule-body.empty
-          -# <strong>Speaker to be announced soon!</strong>
-      -#
-      -#
-      -#
-      .schedule-item
-        .schedule-heading
-          .schedule-date
-            Aug 28, 2012
-          .schedule-title
-            Weekly Dinner #13
-        .schedule-body
-          <strong>We wrap things up and figure out what's next!</strong>
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Aug 21, 2012
+        .schedule-title
+          Weekly Dinner #12
+      .schedule-body.empty
+        -# <strong>Speaker to be announced soon!</strong>
+    -#
+    -#
+    -#
+    .schedule-item
+      .schedule-heading
+        .schedule-date
+          Aug 28, 2012
+        .schedule-title
+          Weekly Dinner #13
+      .schedule-body
+        <strong>We wrap things up and figure out what's next!</strong>
 
-  %a{:name => "faq"}
-  #faq_section.faq.scrollblock
-    .scroll-content
-      %h2 Frequently Asked Questions
+#faq_slide.scrollblock
+  #faq_slide_bg.slide-bg
+  .scroll-content
+    %a{:name => "faq"}
+    %h2 Frequently Asked Questions
 
-      -#
-      .question
-        :markdown
-          ### How do I apply to NCombinator?
+    -#
+    .question
+      :markdown
+        ### How do I apply to NCombinator?
 
-          Just [sign up](./#signup) as a startup. We'll get in touch. We accept everyone who has an active product development team. No team of biz guys though. You need a developer/designer to start. We're here to ship products and validate them at the market. We aren't here to find you a developer or recruit for you.
-      -#
-      -#
-      .question
-        :markdown
-          ### When does it Start?
+        Just [sign up](./#signup) as a startup. We'll get in touch. We accept everyone who has an active product development team. No team of biz guys though. You need a developer/designer to start. We're here to ship products and validate them at the market. We aren't here to find you a developer or recruit for you.
+    -#
+    -#
+    .question
+      :markdown
+        ### When does it Start?
 
-          The first NCombinator batch starts June 4th and goes for 3 months.
-      -#
-      -#
-      .question
-        :markdown
-          ### How does it work?
+        The first NCombinator batch starts June 4th and goes for 3 months.
+    -#
+    -#
+    .question
+      :markdown
+        ### How does it work?
 
-          After you join a batch, on the start of the program we get all the startups introduced to each other. There's an informal secrecy to the group, so feel free to speak your minds. You'll be better off if people know what you're working on so they can try your product, and help if there's any challenges.
+        After you join a batch, on the start of the program we get all the startups introduced to each other. There's an informal secrecy to the group, so feel free to speak your minds. You'll be better off if people know what you're working on so they can try your product, and help if there's any challenges.
 
-          We do weekly dinners (virtual and physical) every tuesday. In SF we'll have pizza and beer, and go till late. You should come ready to demo what you've built, and give feedback on what other people are building.
+        We do weekly dinners (virtual and physical) every tuesday. In SF we'll have pizza and beer, and go till late. You should come ready to demo what you've built, and give feedback on what other people are building.
 
-          For the most part we'll follow the basic YC program to the best our resources will allow. The second dinner will be prototype day so you'll be expected to put something together of what you're building and give a quick presentation to the batch.
+        For the most part we'll follow the basic YC program to the best our resources will allow. The second dinner will be prototype day so you'll be expected to put something together of what you're building and give a quick presentation to the batch.
 
-          At the end of the cycle there will be a demo day where we'll bring together some world class investors to hear your best 2min pitch. We'll also promote these demo day videos to the press.
-      -#
-      -#
-      .question
-        :markdown
-          ### Do you invest money?
+        At the end of the cycle there will be a demo day where we'll bring together some world class investors to hear your best 2min pitch. We'll also promote these demo day videos to the press.
+    -#
+    -#
+    .question
+      :markdown
+        ### Do you invest money?
 
-          Nope. We have no money. We are just a community of startups banding together to provide the support group that makes YC unstoppable.
+        Nope. We have no money. We are just a community of startups banding together to provide the support group that makes YC unstoppable.
 
-      -#
-      -#
-      .question
-        :markdown
-          ### Do you take any equity in my startup?
+    -#
+    -#
+    .question
+      :markdown
+        ### Do you take any equity in my startup?
 
-          Absolutely not.
-      -#
-      -#
-      .question
-        :markdown
-          ### What's expected of an NCombinator company?
+        Absolutely not.
+    -#
+    -#
+    .question
+      :markdown
+        ### What's expected of an NCombinator company?
 
-          NCombinator is easy to get into. But hard to finish. There's no gatekeepers, but there are bouncers. If you aren't making significant progress on your startup and shipping something every single week, you will be booted from the current batch.
+        NCombinator is easy to get into. But hard to finish. There's no gatekeepers, but there are bouncers. If you aren't making significant progress on your startup and shipping something every single week, you will be booted from the current batch.
 
-          Our goal is to provide the motivation to get stuff done every week. You can pivot, change business models, reevaluate. But you have to ship. If we don't hear from you during a dinner or you miss a week, you get marked with "did not ship" (only other NCombinator teams will see this). 2 weeks in a row on DNS, then you are booted from the batch and won't be included in demo day.
+        Our goal is to provide the motivation to get stuff done every week. You can pivot, change business models, reevaluate. But you have to ship. If we don't hear from you during a dinner or you miss a week, you get marked with "did not ship" (only other NCombinator teams will see this). 2 weeks in a row on DNS, then you are booted from the batch and won't be included in demo day.
 
-          That's ok, you can always join in next batch. But during the batch, there's no messing around. You are here to ship and build traction.
-      -#
-      -#
-      .question
-        :markdown
-          ### I'm not in US. Can I join?
+        That's ok, you can always join in next batch. But during the batch, there's no messing around. You are here to ship and build traction.
+    -#
+    -#
+    .question
+      :markdown
+        ### I'm not in US. Can I join?
 
-          YES! You can check in every week online. We'd even love it if you helped bring NCombinator to your city/country. We'll provide whatever support we can to help you do this. Our goal is more startups around the world.
+        YES! You can check in every week online. We'd even love it if you helped bring NCombinator to your city/country. We'll provide whatever support we can to help you do this. Our goal is more startups around the world.
 
-      -#
-      -#
-      .question
-        :markdown
-          ### I have a funded, mature startup. Can I join?
+    -#
+    -#
+    .question
+      :markdown
+        ### I have a funded, mature startup. Can I join?
 
-          YES! If you want to bring your startup back to the early days of weekly product updates and fast progress, join NCombinator! We'd love to have you, but no special rules. We know it's harder for a big team to iterate like a YC team, so you'll have to find a way to do it. But the advantages will be enormous to your business.
-      -#
-      -#
-      .question
-        :markdown
-          ### I own a consulting company. Can I join?
+        YES! If you want to bring your startup back to the early days of weekly product updates and fast progress, join NCombinator! We'd love to have you, but no special rules. We know it's harder for a big team to iterate like a YC team, so you'll have to find a way to do it. But the advantages will be enormous to your business.
+    -#
+    -#
+    .question
+      :markdown
+        ### I own a consulting company. Can I join?
 
-          Yes, but not your whole team. Take 2-3 of your most awesome devs and put them on a startup for the duration of the period. Fund them to build an amazing business and you'll see much better returns than any consulting project you could take.
+        Yes, but not your whole team. Take 2-3 of your most awesome devs and put them on a startup for the duration of the period. Fund them to build an amazing business and you'll see much better returns than any consulting project you could take.
 
-      -#
-      -#
-      .question
-        :markdown
-          ### Are you a cargo cult?
+    -#
+    -#
+    .question
+      :markdown
+        ### Are you a cargo cult?
 
-          Maybe. Our test will be on demo day. Can we produce startups that rival the best in the YC batch? <strong>Keep watching</strong> and see for yourself!
+        Maybe. Our test will be on demo day. Can we produce startups that rival the best in the YC batch? <strong>Keep watching</strong> and see for yourself!
 
-      -#
-      -#
-      .question
-        :markdown
-          ### Aren't you just a bunch of YC rejects?
+    -#
+    -#
+    .question
+      :markdown
+        ### Aren't you just a bunch of YC rejects?
 
-          No, not really. Most of our companies haven't even applied to YC. They either didn't want to give up the 7% or didn't fit the criteria of a YC startup. We even welcome YC alumni's who have already gone through the cycle and want to bring back the energy of YC.
-      -#
-      -#
+        No, not really. Most of our companies haven't even applied to YC. They either didn't want to give up the 7% or didn't fit the criteria of a YC startup. We even welcome YC alumni's who have already gone through the cycle and want to bring back the energy of YC.
+    -#
+    -#
 
-  .scrollblock.do-things
-    .scroll-content
-      %a.rich{:href => "http://lizibot.com"} Do things.
+.scrollblock.do-things
+  .scroll-content
+    %a.rich{:href => "http://lizibot.com"} Do things.
 
