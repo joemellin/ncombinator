@@ -7,7 +7,7 @@ $(document).on
   ready: ->
     console.log("ncombinator says hi!")
 
-    if typeof document.body.style.MozBoxShadow != 'string'
+    if typeof document.body.style.MozBoxAlign != 'string'
       $(".fflabel").each (index) ->
         $(this).hide()
 
