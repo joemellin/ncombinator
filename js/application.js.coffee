@@ -7,6 +7,10 @@ $(document).on
   ready: ->
     console.log("ncombinator says hi!")
 
+    if typeof document.body.style.MozBoxShadow != 'string'
+      $(".fflabel").each (index) ->
+        $(this).hide()
+
     $(".example").each (index) ->
       self = $(this)
       self.example(self.attr("title"))
@@ -88,20 +92,20 @@ $(document).on
       slideBackgrounds.filter(":visible").not(currentBackground).fadeOut("slow")
       currentBackground.not(":visible").fadeIn("slow")
 
-    scrollorama.animate("#idea_team", { duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate("#killer", { delay: 100, duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate("#and", { delay: 200, duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate("#ninja", { delay: 300, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate("#idea_team", { duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate("#killer", { delay: 100, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate("#and", { delay: 200, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate("#ninja", { delay: 300, duration: 100, property:'opacity', start:0, pin: true })
+    #
+    # scrollorama.animate(".lightbulb-icon", { delay: 100, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate(".plus-icon", { delay: 200, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate(".ninja-icon", { delay: 300, duration: 100, property:'opacity', start:0, pin: true })
+    #
+    # scrollorama.animate("#difference", { delay: 400, duration: 100, property:'opacity', start:0, pin: true })
+    # scrollorama.animate(".arrow-icon", { delay: 500, duration: 100, property:'opacity', start:0, pin: true })
 
-    scrollorama.animate(".lightbulb-icon", { delay: 100, duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate(".plus-icon", { delay: 200, duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate(".ninja-icon", { delay: 300, duration: 100, property:'opacity', start:0, pin: true })
-
-    scrollorama.animate("#difference", { delay: 400, duration: 100, property:'opacity', start:0, pin: true })
-    scrollorama.animate(".arrow-icon", { delay: 500, duration: 100, property:'opacity', start:0, pin: true })
-
-    scrollorama.animate('.ninja',{ delay: 100, duration: 300, property:'margin', start:500, pin: true })
-    scrollorama.animate('.red',{ delay: 400, duration: 100, property:'rotate', start:0, end: 45, pin: true })
+    # scrollorama.animate('.ninja',{ delay: 100, duration: 300, property:'margin', start:500, pin: true })
+    # scrollorama.animate('.red',{ delay: 400, duration: 100, property:'rotate', start:0, end: 45, pin: true })
 
 
     # scrollorama.animate('#compare_slide_bg', {delay: 400, duration: 300, property:'opacity', start:0, end: 1.0 })
