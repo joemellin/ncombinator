@@ -21,3 +21,7 @@ gem "rdiscount"
 gem "pry"
 
 gem "jammit"
+
+
+# parse stuff
+gem "parse-ruby-client"
