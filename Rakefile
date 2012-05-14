@@ -21,5 +21,5 @@ task :deploy => :compile do
   # uncomment this for dry run
   # opts << "n"
 
-  puts `rsync -#{opts} --exclude-from .rsync_exclude ./build/ railsjedi@crate.dreamhost.com:/home/railsjedi/ncombinator.com`
+  puts `rsync -#{opts} --exclude-from .rsync_exclude ./build/ railsjedi@crate.dreamhost.com:/home/railsjedi/nreduce.com`
 end

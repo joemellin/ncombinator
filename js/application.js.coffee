@@ -5,8 +5,6 @@ $.parse.init
 
 $(document).on
   ready: ->
-    console.log("ncombinator says hi!")
-
     $(".example").each (index) ->
       self = $(this)
       self.example(self.attr("title"))
