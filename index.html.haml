@@ -1,5 +1,16 @@
 %p#console
 
+#topmenu.navbar
+  .navbar-inner
+    .container
+      %ul.nav
+        %li
+          %a{:href => "#rules_slide"} 3 rules
+        %li
+          %a{:href => "#faq_slide"} FAQ
+        %li
+          %a{:href => "#signup_slide"} Sign up
+
 -# SLIDE1
 #start_slide.scrollblock
   %a{:name => "start"}
@@ -471,7 +482,7 @@
       .schedule-body
         <strong>We wrap things up and figure out what's next!</strong>
 
-    %hr
+    %hrs
     .do-things
       %a.rich{:href => "#signup"} Do things.
 
