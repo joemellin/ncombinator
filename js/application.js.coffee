@@ -42,7 +42,9 @@ $(document).on
           email: signup.find("input[name=email]").not(".hint").val()
           selectedTypes: checkSelected()
 
-        if !postData.email
+        postData.name = "" if postData.name == "Your Name"
+
+        if !postData.email or postData.email == "Your Email"
           alert("Please enter a valid email to sign up. Thanks!")
           blurSignupFields()
           return
@@ -56,18 +58,25 @@ $(document).on
         signup.data("in-progress", "true")
 
         $.ajax
-          url: "http://localhost:3000/signup"
+          type: "POST"
+          url: "http://s12.nreduce.com/signup"
           data: postData
           dataType: "json"
           success: (json) ->
-            console.log("Posted signup")
-            signup.find("input[type=text]").val("")
-            signup.find(".success-msg").fadeIn()
-            signup.data("in-progress", null)
-            blurSignupFields()
+            if json.success
+              console.log("Posted signup")
+              console.log(json)
+              signup.find("input[type=text]").val("")
+              signup.find(".success-msg").fadeIn()
+              signup.data("in-progress", null)
+              blurSignupFields()
+              return true
+            else
+              alert("Please enter a valid name and email")
           error: (xhr) ->
             alert("Sorry, something went wrong. Please try again.")
-
+          complete: ->
+            signup.removeData("in-progress")
 
     # SCROLLORAMA!
     # initialize the plugin, pass in the class selector for the sections of content (blocks)
