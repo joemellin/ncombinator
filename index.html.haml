@@ -1,5 +1,22 @@
 %p#console
 
+#topmenu.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %span.logo
+      %span{:style => "margin-left: 230px; vertical-align: 8px" } 
+        %a{:href => "https://twitter.com/nReduce", :class => "twitter-follow-button", "data-show-count" => "false", "data-size" => "large", :style => "vertical-align: -40%" }Follow @nReduce
+        %a{:href => "https://twitter.com/share", :class => "twitter-share-button", "data-url" => "http://nReduce.com", "data-text" => "An alliance of creators who stay accountable and support one another", "data-via"=>"nReduce", "data-size" => "large",  "data-related" => "ashbhoopathy, railsjedi, richlengsavath",  "data-hashtags" => "nReduce"} Tweet
+
+      %ul.nav{:style => "float: right"}
+          
+        %li
+          %a{:href => "#rules_slide"} 3 rules
+        %li
+          %a{:href => "#faq_slide"} FAQ
+        %li
+          %a{:href => "#signup_slide"} Sign up
+
 -# SLIDE1
 #start_slide.scrollblock
   %a{:name => "start"}
@@ -15,8 +32,8 @@
       %span.ninja-icon
 
     %p#difference
-      You want to make a difference in the world with your ideas, <br>
-      build an amazing product, and create a huge company.
+      You want to make a difference in the world, <br>
+      build remarkable products, and create an enduring company.
     .arrow-icon
 
 
@@ -26,9 +43,8 @@
   #imagine_slide_bg.slide-bg
   .scroll-content
     %p
-      Imagine a brother(or sister)hood of other ninjas, <br>
+      Imagine an alliance of other ninjas, <br>
       just like your team, giving you feedback and helping you iterate.
-
 
     .ninjas
       - 3.times do |row|
@@ -471,7 +487,7 @@
       .schedule-body
         <strong>We wrap things up and figure out what's next!</strong>
 
-    %hr
+    %hrs
     .do-things
       %a.rich{:href => "#signup"} Do things.
 
