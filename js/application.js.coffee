@@ -59,7 +59,7 @@ $(document).on
 
         $.ajax
           type: "POST"
-          url: "http://s12.nreduce.com/signup"
+          url: "http://nreduce.herokuapp.com/signup"
           data: postData
           dataType: "json"
           success: (json) ->
