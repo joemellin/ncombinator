@@ -1,7 +1,4 @@
 $ = jQuery
-$.parse.init
-  app_id : "sgYYB0xyyyt1yNIzFNWuyUOsB2oojvQcvL698lD4"
-  rest_key : "GBbOOaqjYFff3og7eXJaLZQUJTqP9dFMFOUfBwOi"
 
 $(document).on
   ready: ->
@@ -58,12 +55,19 @@ $(document).on
         return if signup.data("in-progress")
         signup.data("in-progress", "true")
 
-        $.parse.post 'signups_prod', postData, (json) ->
-          console.log("Posted signup")
-          signup.find("input[type=text]").val("")
-          signup.find(".success-msg").fadeIn()
-          signup.data("in-progress", null)
-          blurSignupFields()
+        $.ajax
+          url: "http://localhost:3000/signup"
+          data: postData
+          dataType: "json"
+          success: (json) ->
+            console.log("Posted signup")
+            signup.find("input[type=text]").val("")
+            signup.find(".success-msg").fadeIn()
+            signup.data("in-progress", null)
+            blurSignupFields()
+          error: (xhr) ->
+            alert("Sorry, something went wrong. Please try again.")
+
 
     # SCROLLORAMA!
     # initialize the plugin, pass in the class selector for the sections of content (blocks)
