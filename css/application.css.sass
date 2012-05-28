@@ -1,6 +1,5 @@
 @import "bourbon/bourbon"
 
-
 @import "./slides/slide01_start.css.sass"
 @import "./slides/slide02_imagine.css.sass"
 @import "./slides/slide03_rules.css.sass"
@@ -12,6 +11,8 @@
 @import "./slides/slide09_faq.css.sass"
 
 @import "./slides/backgrounds.css.sass"
+
+@import "./pages/landing.css.sass"
 
 body
   position: relative
@@ -37,6 +38,11 @@ body
             font-weight: 300
             color: #555
             text-shadow: none !important
+
+.pages
+  > .container
+    margin-top: 50px
+
 
 #column_bg
   width: 784px
@@ -112,4 +118,6 @@ a.logo
   height: 65px
   background: url("../img/nreduce.png") no-repeat
   text-indent: -9999px
+
+
 
