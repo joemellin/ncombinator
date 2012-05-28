@@ -7,7 +7,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,600' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./scrollorama/css/normalize.css" type="text/css">
   <link rel="stylesheet" href="./css/bootstrap.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./css/application.css" type="text/css" media="screen" charset="utf-8">
 
@@ -19,16 +18,15 @@
 
 </head>
 
-<body class="presentation">
+<body class="pages">
+  <%= render "_nav.html.haml" %>
   <%= yield %>
 
   <script src="./js/jquery-1.7.1.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/jquery.example.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./scrollorama/js/jquery.lettering-0.6.1.min.js"></script>
-  <script src="./scrollorama/js/jquery.scrollorama.js"></script>
   <script src="./js/application.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/slides.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/pages.js" type="text/javascript" charset="utf-8"></script>
 
   <%= render "_scripts.html.erb" %>
 

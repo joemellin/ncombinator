@@ -1,0 +1,118 @@
+%p#console
+
+-# SLIDE1
+#start_slide.scrollblock
+  %a{:name => "start"}
+  #start_slide_bg.slide-bg
+  .scroll-content
+    %h1 So, here's the deal.
+
+    %h2#idea_team You've got a <em id="killer">killer idea</em> <var id="and">and a</var> <em id="ninja">ninja team</em>.
+
+    %p#bulb_ninja.icons
+      %span.lightbulb-icon
+      %span.plus-icon +
+      %span.ninja-icon
+
+    %p#difference
+      You want to make a difference in the world, <br>
+      build remarkable products, and create an enduring company.
+    .arrow-icon
+
+
+-# SLIDE2
+#imagine_slide.slide2.scrollblock
+  %a{:name => "imagine"}
+  #imagine_slide_bg.slide-bg
+  .scroll-content
+    %p
+      Imagine an alliance of other ninjas, <br>
+      just like your team, giving you feedback and helping you iterate.
+
+    .ninjas
+      - 3.times do |row|
+        - 10.times do |col|
+          .ninja{add_class("red", :if => (row == 2 and col == 2))}
+
+
+    %p
+      We'd stay accountable to each other.  Get advice, motivation, <br>
+      and user feedback on your products when necessary.
+
+
+-# SLIDE3
+#rules_slide.scrollblock
+  %a{:name => "rules"}
+  #rules_slide_bg.slide-bg
+  .scroll-content
+    %h2 Say there were only <em>3</em> rules.
+
+    .rule-box
+      .num1-icon
+      %h3 Ship.
+      %p.with-ship-icon
+        When the rubber meets the road, all that matters is shipping good product that comes into
+        contact with your users.   Typing in "deploy", and learning from what happens next.
+        Our weekly schedule is the unspoken "gentle peer pressure" needed to give you that kickstart.
+
+    .rule-box
+      .num2-icon
+      %h3 Support.
+      %p.with-support-icon
+        The value of community is priceless.  Especially as a startup founder who cares about
+        building great products. We all need early feedback on what we're working on.
+        So join forces, use each others products, and provide/receive that crucial early adopter user-base and feedback.
+
+    .rule-box
+      .num3-icon
+      %h3 Share.
+      .icon
+      %p.with-share-icon
+        Learn from others by sharing what's working and what isn't -- whether it's understanding the fine print
+        on your term sheets, applying analytical rigor to UX, or scaling your noSQL data store, share with others
+        in a supportive, secure community.  Information is off the record and secrets are safe within our network.
+
+
+
+-# SLIDE4
+#ship_slide.scrollblock
+  %a{:name => "ship"}
+  #ship_slide_bg.slide-bg
+  .scroll-content
+    %p
+      And <strong>each team</strong> would be expected to ship a <br>
+      <strong>meaningful product milestone</strong> every week.
+
+    .ship-icons
+      - 5.times do
+        .ship-icon
+
+
+-# SLIDE5
+#compare_slide.scrollblock
+  %a{:name => "compare"}
+  #compare_slide_bg.slide-bg
+  .scroll-content
+    %p
+      Yeah, it's sort of like <em class='yc'>that other thing</em>.
+
+    %p
+      Except <strong>no equity</strong> taken,
+      and <strong>no barriers</strong>.
+
+    %p
+      Just a <strong>community</strong> that <strong>motivates</strong>.
+
+
+-# SLIDE6
+-# signup for
+#signup_slide.scrollblock
+  %a{:name => "signup"}
+  #signup_slide_bg.slide-bg
+  .scroll-content
+    %p
+      Well... it's happening. <strong>This summer.</strong><br>And we'd like you to join us.
+    %p
+      Interested? <strong><a href="./#signup">Sign up.</a></strong><br>Let's build something amazing.
+
+    %p &nbsp;

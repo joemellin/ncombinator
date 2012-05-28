@@ -7,8 +7,8 @@ require 'bourbon'
 ignore /\/_.*/
 ignore /\.rb*/
 ignore /Rakefile|Guardfile|Termfile|Gemfile|Gemfile.lock/
-layout "layout_parallax.html.erb"
-layout "parallax.html.erb" => "no_layout.html.erb"
+layout "layout.html.erb"
+layout "intro.html.haml" => "layout_parallax.html.erb"
 
 PROJECT_ROOT = File.dirname(__FILE__)
 

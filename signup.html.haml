@@ -1,0 +1,37 @@
+-# SLIDE6
+-# signup for
+#signup_slide.scrollblock
+  %a{:name => "signup"}
+  #signup_slide_bg.slide-bg
+  .scroll-content
+    %p
+      Sign up for nReduce!
+      %br
+      Starts <strong>June 5th, 2012</strong>
+
+
+    %form#signup-box{:href => "/signup", :method => "POST"}
+
+      -# TODO: setup form fields and submit button
+
+      .fields
+        %input.example{:type => "text", :name => "email", :title => "Your Email"}
+        %input.example{:type => "text", :name => "name", :title => "Your Name"}
+      .pick
+        %h3 I'm interested in being a:
+        %ul
+          %li
+            %label.startup-type{"data-type" => "startup"}
+              Startup
+
+          %li
+            %label.mentor-type{"data-type" => "mentor"}
+              Mentor
+
+          %li
+            %label.spectator-type.on{"data-type" => "spectator"}
+              Spectator
+
+      .actions
+        .success-msg We'll contact you soon to get things started. Thanks!
+        .submit Join
