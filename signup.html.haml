@@ -1,37 +1,30 @@
--# SLIDE6
--# signup for
-#signup_slide.scrollblock
-  %a{:name => "signup"}
-  #signup_slide_bg.slide-bg
-  .scroll-content
+.signup-page
+
+  %form#signup-box{:href => "/signup", :method => "POST"}
+    %h2 Sign up for nReduce!
     %p
-      Sign up for nReduce!
-      %br
       Starts <strong>June 5th, 2012</strong>
 
+    -# TODO: setup form fields and submit button
 
-    %form#signup-box{:href => "/signup", :method => "POST"}
+    .fields
+      %input.example{:type => "text", :name => "email", :title => "Your Email"}
+      %input.example{:type => "text", :name => "name", :title => "Your Name"}
+    .pick
+      %h3 I'm interested in being a:
+      %ul
+        %li
+          %label.startup-type{"data-type" => "startup"}
+            Startup
 
-      -# TODO: setup form fields and submit button
+        %li
+          %label.mentor-type{"data-type" => "mentor"}
+            Mentor
 
-      .fields
-        %input.example{:type => "text", :name => "email", :title => "Your Email"}
-        %input.example{:type => "text", :name => "name", :title => "Your Name"}
-      .pick
-        %h3 I'm interested in being a:
-        %ul
-          %li
-            %label.startup-type{"data-type" => "startup"}
-              Startup
+        %li
+          %label.spectator-type.on{"data-type" => "spectator"}
+            Spectator
 
-          %li
-            %label.mentor-type{"data-type" => "mentor"}
-              Mentor
-
-          %li
-            %label.spectator-type.on{"data-type" => "spectator"}
-              Spectator
-
-      .actions
-        .success-msg We'll contact you soon to get things started. Thanks!
-        .submit Join
+    .actions
+      .success-msg We'll contact you soon to get things started. Thanks!
+      .submit Join

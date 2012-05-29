@@ -1,17 +1,7 @@
 @import "bourbon/bourbon"
 
-
-@import "./slides/slide01_start.css.sass"
-@import "./slides/slide02_imagine.css.sass"
-@import "./slides/slide03_rules.css.sass"
-@import "./slides/slide04_ship.css.sass"
-@import "./slides/slide05_compare.css.sass"
-@import "./slides/slide06_signup.css.sass"
-@import "./slides/slide07_details.css.sass"
-@import "./slides/slide08_schedule.css.sass"
-@import "./slides/slide09_faq.css.sass"
-
-@import "./slides/backgrounds.css.sass"
+@import "./_slides.css.sass"
+@import "./_pages.css.sass"
 
 body
   position: relative
@@ -38,55 +28,11 @@ body
             color: #555
             text-shadow: none !important
 
-#column_bg
-  width: 784px
-  left: 0
-  right: 0
-  margin: auto
-  height: 100%
-  position: fixed
-  z-index: 100
-  background-color: #fff
-  top: 0
-  bottom: 0
-  box-shadow: 0 0 20px rgba(0,0,0,0.1)
-
 
 blockquote
   p
     text-align: left !important
 
-.presentation
-  color: #5A5A5A
-  position: relative
-  h1, h2, h3, p
-    text-align: center
-  p
-    font-size: 26px
-    line-height: 1.7
-    letter-spacing: -.5px
-    font-family: Open Sans, sans-serif
-    font-weight: 300
-    letter-spacing: -.6px
-    strong
-      font-weight: bold
-
-  .scrollblock
-    margin-left: auto
-    margin-right: auto
-    left: 0
-    right: 0
-    width: 860px
-    padding: 0
-    padding-top: 230px
-    padding-bottom: 0
-    .scroll-content
-      box-shadow: 1px 3px 26px rgba(0,0,0,0.2)
-      z-index: 1000
-      position: relative
-      padding: 40px
-      background-color: #fff
-      +border-radius(5px)
 
 h2.section
   font-size: 24px
@@ -95,21 +41,12 @@ h2.section
   padding-top: 8px
 
 
-.do-things
-  .scroll-content
-    padding-bottom: 30px
-  .rich
-    display: block
-    width: 770px
-    height: 240px
-    margin: auto
-    background: url("../img/landing/we_do_things.jpg") no-repeat
-    text-indent: -99999px
-
 a.logo
   display: block
   width: 246
   height: 65px
   background: url("../img/nreduce.png") no-repeat
   text-indent: -9999px
+
+
 

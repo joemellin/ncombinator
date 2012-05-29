@@ -1,0 +1,275 @@
+.presentation
+  color: #5A5A5A
+  position: relative
+  h1, h2, h3, p
+    text-align: center
+  p
+    font-size: 26px
+    line-height: 1.7
+    letter-spacing: -.5px
+    font-family: Open Sans, sans-serif
+    font-weight: 300
+    letter-spacing: -.6px
+    strong
+      font-weight: bold
+
+  .scrollblock
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    width: 860px
+    padding: 0
+    padding-top: 230px
+    padding-bottom: 0
+    .scroll-content
+      box-shadow: 1px 3px 26px rgba(0,0,0,0.2)
+      z-index: 1000
+      position: relative
+      padding: 40px
+      background-color: #fff
+      +border-radius(5px)
+
+  .slide-bg
+    width: 100%
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 0
+    display: none
+
+
+  #imagine_slide_bg
+    background: url("../img/slidebg/big_sun.png") no-repeat
+    background-position: bottom left
+
+  #rules_slide_bg
+    +linear-gradient(top, #76BEF9, #5C95C3)
+
+  #ship_slide_bg
+    background: url("../img/slidebg/shuttle_shipping.jpg") no-repeat
+    background-size: 100%
+
+  #compare_slide_bg
+    background-color: #F76401
+
+  #signup_slide_bg
+    background: #000 url("../img/slidebg/sparta.jpg") no-repeat
+    background-size: 100%
+    background-position: center center
+
+  #details_slide_bg
+    background: #6BA3D1 url("../img/slidebg/sf_office.jpg") no-repeat
+    background-size: 100%
+
+  #schedule_slide_bg
+    background: #10141A url("../img/slidebg/goldengate_night.jpg") no-repeat
+    background-size: 100%
+
+  #faq_slide_bg
+    background: #000 url("../img/slidebg/moon2.jpg") no-repeat
+    background-size: 100%
+
+  #start_slide
+    padding-top: 50px
+    h1
+      font-weight: 300
+      font-size: 48px
+      margin-bottom: 32px
+
+    .arrow-icon
+      width: 128px
+      height: 128px
+      display: block
+      margin: auto
+      background: url("../img/landing/large_down_arrow.png") no-repeat
+
+    h2
+      margin-top: 35px
+      font-size: 28px
+      font-weight: 300
+      margin-bottom: 60px
+      em
+        font-style: normal
+        font-weight: bold
+        text-decoration: underline
+        color: #303030
+
+    .icons
+      margin-bottom: 60px
+
+    .lightbulb-icon
+      display: inline-block
+      vertical-align: middle
+      width: 62px
+      height: 89px
+      background: url("../img/landing/big_idea_lightbulb.png") no-repeat
+
+    .plus-icon
+      display: inline-block
+      vertical-align: middle
+      font-size: 48px
+      font-weight: bold
+      margin: 0 25px
+
+    .ninja-icon
+      display: inline-block
+      vertical-align: middle
+      width: 144px
+      height: 102px
+      background: url("../img/landing/ninja_team.png") no-repeat
+
+
+  //
+  #imagine_slide
+    position: relative
+    p
+      margin-left: -2px
+      margin-right: -2px
+    .ninjas
+      margin-top: 60px
+      margin-bottom: 60px
+      margin-left: -18px
+      margin-right: -49px
+      .ninja
+        width: 79px
+        height: 74px
+        display: inline-block
+        background: url("../img/landing/ninja_single_black.png") no-repeat
+        margin-bottom: 2px
+        &.red
+          background: url("../img/landing/ninja_single_red.png") no-repeat
+
+  //
+  #rules_slide
+    .scroll-content
+      padding-bottom: 1px
+
+    h2
+      font-size: 36px
+      color: #A9A9A9
+      font-weight: normal
+      margin-bottom: 50px
+
+      em
+        font-style: normal
+        font-weight: bold
+        text-decoration: underline
+        color: #2c2c2c
+
+
+    .rule-box
+      +clearfix
+      margin-bottom: 40px
+
+      .num1-icon, .num2-icon, .num3-icon
+        width: 52px
+        height: 51px
+        background-repeat: no-repeat
+        margin: auto
+        margin-bottom: 15px
+
+      .num1-icon
+        background-image: url("../img/landing/big1.png")
+      .num2-icon
+        background-image: url("../img/landing/big2.png")
+      .num3-icon
+        background-image: url("../img/landing/big3.png")
+
+      h3
+        color: #000
+        font-size: 64px
+        font-weight: 800
+        line-height: 1.0
+        margin-bottom: 20px
+
+      p
+        font-size: 18px
+        letter-spacing: 0
+        line-height: 1.4
+        color: #888
+        text-align: left
+        width: 364px
+        font-weight: 300
+        padding-left: 150px
+        background-repeat: no-repeat
+        margin: auto
+        &.with-ship-icon
+          background-image: url("../img/landing/big_ship_icon.png")
+          background-position: 11px 40px
+        &.with-support-icon
+          background-image: url("../img/landing/big_support_icon.png")
+          background-position: 18px 50px
+        &.with-share-icon
+          background-image: url("../img/landing/big_share_icon.png")
+          background-position: 4px 50px
+
+  //
+  #ship_slide
+    .scroll-content
+      padding-top: 110px
+      padding-bottom: 110px
+    p
+      font-size: 28px
+    .ship-icons
+      text-align: center
+      .ship-icon
+        display: inline-block
+        width: 130px
+        height: 120px
+        background: url("../img/landing/big_checkmark_ship_icon.png") no-repeat
+        margin-top: 50px
+
+  //
+  #compare_slide
+    em.yc
+      font-style: normal
+      color: #EF7101
+    p
+      font-size: 36px
+      margin: 60px 0
+      line-height: 1.5
+
+  //
+
+  #signup_slide
+    padding-bottom: 200px
+    .mini-logo
+      width: 250px
+      height: 94px
+      background: url("../img/nreduce_logo.png") no-repeat
+      margin: auto
+      text-indent: -9999px
+      margin-bottom: 35px
+      margin-top: 35px
+    .scroll-content
+      padding-top: 1px
+      padding-bottom: 0px
+      p
+        font-size: 36px
+        margin: 60px 0
+        line-height: 1.5
+
+  //
+  //
+  #console
+    display: none
+    position: fixed
+    top: 0
+    left: 15px
+    width: 500px
+    margin: 0
+    font-size: 14px
+    font-style: italic
+    background-color: #69697A
+    text-shadow: none
+    text-align: left
+    padding: 3px 10px
+    border-radius: 0 0 10px 10px
+    z-index: 10000
+    opacity: 1.0
+    color: #fff
+
