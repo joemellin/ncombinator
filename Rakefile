@@ -21,7 +21,7 @@ task :deploy => :compile do
   # uncomment this for dry run
   # opts << "n"
 
-  puts `rsync -#{opts} --exclude-from .rsync_exclude ./build/ railsjedi@crate.dreamhost.com:/home/railsjedi/nreduce.com`
+  puts `rsync -#{opts} --exclude-from .rsync_exclude ./build/ railsjedi@crate.dreamhost.com:/home/railsjedi/nreduce.com/new`
 end
 
 load File.expand_path("../lib/nreduce/tasks.rake", __FILE__)
