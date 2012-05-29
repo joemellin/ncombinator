@@ -1,20 +1,42 @@
 .landing-page
-  %p
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    .span3
-    	%p this is the biggest deal
-	.span9
-		.row
-			.span3
-				%p this is the read deal
+  .span12.hero-unit{:style=>'text-align: center'}
+    %h1 The First International
+    %h1 Startup Incubator
+    %br
+    %br
+    %h3 Our first class starts in 
+    %h1 5d 20h 20m
+    %br
+    %br
+    %br
+    %hr
+    .row
+      .span4{:style=>'text-align: center'}
+        %br
+        %img{:src => "/img/landing/ninja_team.png", :alt => "Ninja Team"}
+      .span4{:style=>'text-align: left'}
+        %h2 250 Startups Committed
+        %ul
+        %li Any team in the world can join.
+        %li Join and execute on your idea for 12 weeks.
+        %li Free for Startups and does not take equity.
+        %li Great startups get discovered
+      .span2{:style=>'text-align: right'}
+        %br
+        %br
+        %br
+        %a.btn.btn-large.btn-success{:href => "http://s12.nreduce.com/startups/new"}Sign Up Now
+  .row{:style=>'text-align: center'}
+    .span4{:style=>'text-align: center'}
+      %h2 Mentors
+      %p Help teams and share your expertise.
+      %a.btn.btn-large{:href => "http://s12.nreduce.com/mentors/new"}Join Now
+    .span4{:style=>'text-align: center'}
+      %h2 Investors
+      %p Get access to the nReduce demo day.
+      %a.btn.btn-large{:href => "http://s12.nreduce.com/investors/new"}Join Now
+    .span4{:style=>'text-align: center'}
+      %h2 Sponsors
+      %p Support amazing teams.
+      %a.btn.btn-large{:href => "/sponsor.html"}View Options
 
-			.span3
-				%p maybe this is the big deal
-
-			.span3
-				%p lets mess with this hardcore
