@@ -1,10 +1,13 @@
 .pages
   > .container
     margin-top: 50px
+  &.sun-bg
+    background: #EAEAEA url("../img/slidebg/big_sun.png") no-repeat
+    background-position: bottom left
 
 .page-bg
   background: #fff
-  margin-top: -31px
+  margin-top: -32px
   padding-top: 18px
   padding-bottom: 60px
   +box-shadow(0 0 19px rgba(0,0,0,0.2))
@@ -13,8 +16,10 @@
     text-align: center
 
 .landing-page
+
+
   .hero-unit
-    background-color: #fff
+    background: none
     padding-bottom: 0
     padding-top: 30px
     h1
@@ -37,7 +42,8 @@
     margin-bottom: 50px
 
   .landing-banner
-    background-color: #000
+    background-color: #2B72A2
+    text-shadow: 0 0 5px rgba(0,0,0,0.5)
     color: #fff
     text-shadow: yellow
     +box-shadow(0 0 22px rgba(0,0,0,0.4))
@@ -49,6 +55,7 @@
       display: inline-block
       text-align: center
       color: #000
+      text-shadow: 0 0 0
     ul
       margin: 0
       margin-left: 19px
