@@ -1,34 +1,32 @@
-.landing-page
-  .span12.hero-unit{:style=>'text-align: center'}
-    %h1 The First International
-    %h1 Startup Incubator
-    %br
-    %br
-    %h3 Our first class starts in
-    %h1 5d 20h 20m
-    %br
-    %br
-    %br
-    %hr
-    .row
-      .span4{:style=>'text-align: center'}
+.landing-page.page-bg
+  .row
+    .span10.hero-unit
+      %h1
+        The First International
         %br
-        %a{:href => "./intro.html", :target => "_blank"}
-          %img{:src => "./img/landing/ninja_team.png", :alt => "Ninja Team"}
-        %br
-        %a{:href => "./intro.html", :target => "_blank"} See the Intro
-      .span4{:style=>'text-align: left'}
-        %h2 250 Startups Committed
-        %ul
-        %li Any team in the world can join.
-        %li Join and execute on your idea for 12 weeks.
-        %li Free for Startups and does not take equity.
-        %li Great startups get discovered
-      .span2{:style=>'text-align: right'}
-        %br
-        %br
-        %br
-        %a.btn.btn-large.btn-success{:href => "http://s12.nreduce.com/startups/new"}Sign Up Now
+        Startup Incubator
+      .primary-action
+        %a.btn.btn-large.btn-success{:href => "./signup.html"}Sign Up Now
+
+      .countdown
+        %h2 Our first class starts in
+        %h3 5d 20h 20m
+
+      .row.landing-banner
+        .span5{:style=>'text-align:right;padding-top:5px'}
+          %a{:href => "./intro.html", :target => "_blank"}
+            %img{:src => "./img/landing/ninja_team.png", :alt => "Ninja Team"}
+            %br
+            See the Intro
+
+        .span5{:style=>'text-align: left'}
+          %h2 300+ Startups Registered
+          %ul
+            %li Any team in the world can join.
+            %li Join and execute on your idea for 12 weeks.
+            %li Free for Startups and does not take equity.
+            %li Matches great startups to great investors.
+
   .row{:style=>'text-align: center'}
     .span4{:style=>'text-align: center'}
       %h2 Mentors

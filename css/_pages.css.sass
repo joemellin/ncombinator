@@ -2,6 +2,65 @@
   > .container
     margin-top: 50px
 
+.page-bg
+  background: #fff
+  margin-top: -31px
+  padding-top: 18px
+  padding-bottom: 60px
+  +box-shadow(0 0 19px rgba(0,0,0,0.2))
+  +clearfix
+  .hero-unit
+    text-align: center
+
+.landing-page
+  .hero-unit
+    background-color: #fff
+    padding-bottom: 0
+    padding-top: 30px
+    h1
+      font-weight: 300
+      margin-bottom: 40px
+    h2
+      font-weight: 500
+    h3
+      font-weight: bold
+      font-size: 32px
+
+  .primary-action
+    margin-bottom: 20px
+    .btn-success
+      font-size: 40px
+      padding-left: 30px
+      padding-right: 30px
+
+  .countdown
+    margin-bottom: 50px
+
+  .landing-banner
+    background-color: #000
+    color: #fff
+    text-shadow: yellow
+    +box-shadow(0 0 22px rgba(0,0,0,0.4))
+    padding-top: 20px
+    padding-bottom: 20px
+    margin-left: -60px
+    margin-right: -100px
+    a
+      display: inline-block
+      text-align: center
+      color: #000
+    ul
+      margin: 0
+      margin-left: 19px
+      li
+        margin-bottom: 2px
+    img
+      background: white
+      border-radius: 14px
+      padding: 10px
+      margin-top: -8px
+      margin-bottom: -20px
+
 
 .how-page
   .details-content
@@ -65,19 +124,33 @@
         font-weight: 500
 
 
-
-
 .signup-page
+  > .span12
+    float: none
+    margin-left: auto
+    margin-right: auto
+
   #signup-box
     +linear-gradient("top", #F4F4F4, #fff)
     +border-radius(0 0 13px 13px)
 
-    padding: 30px
-    margin: -40px
-    padding-bottom: 120px
+    +box-shadow(0 0 19px rgba(0, 0, 0, 0.2))
+
+    padding: 50px
+    padding-top: 30px
+    margin: 0
+    margin-top: -40px
+    padding-bottom: 150px
     position: relative
 
     +clearfix
+
+    h2
+      line-height: 2
+      font-size: 40px
+      margin-bottom: 27px
+      border-bottom: 1px solid #aaa
+      font-weight: 300
 
     .fields
       float: left
@@ -91,7 +164,7 @@
         border: 4px solid #E4E4E4
         font-weight: 300
         +border-radius(4px)
-        width: 322px
+        width: 375px
         // +box-sizing(border-box)
         -webkit-box-sizing: border-box
         -moz-box-sizing: content-box
@@ -101,11 +174,14 @@
           color: #aaa
     .pick
       +clearfix
-      width: 338px
+      width: 359px
       float: left
+      margin-top: -31px
+      margin-left: 129px
       h3
         font-size: 24px
         color: #969696
+        margin-left: 21px
         margin-bottom: 10px
       ul, li
         list-style: none
@@ -126,6 +202,8 @@
           color: #787878
           cursor: pointer
           +box-sizing(border-box)
+        .on
+          color: #000
         .startup-type
           background-image: url("../img/landing/startup_button_off.png")
           &.on
@@ -146,7 +224,6 @@
       right: 0
       bottom: 0
       height: 105px
-      +linear-gradient("top", #DFDFDF, #CFCFCF)
       +border-bottom-radius(13px)
       +clearfix
 
@@ -156,9 +233,9 @@
         background: url("../img/landing/join_us_button.png") no-repeat
         float: right
         text-indent: -9999px
-        margin-top: 20px
         cursor: pointer
-        margin-right: 10px
+        margin-top: 0px
+        margin-right: 43px
 
       .success-msg
         display: none
@@ -170,3 +247,34 @@
         line-height: 1.5
         font-weight: bold
         color: #4EABEF
+
+.faq-page
+  h2
+    margin-bottom: 30px
+  .scroll-content
+    padding: 40px 60px
+
+  .question
+    margin-bottom: 30px
+    h3
+      text-align: left
+      +linear-gradient(top, #F3F7FA, #ECF1F2)
+      padding-left: 48px
+      background-image: url("../img/landing/q2.png")
+      background-repeat: no-repeat
+      background-position: top left
+      min-height: 40px
+      line-height: 40px
+      +box-sizing(border-box)
+      +border-radius(5px)
+      color: #2E74A9
+      font-size: 16px
+    p
+      text-align: left
+      font-size: 16px
+      margin-top: 10px
+      padding-left: 48px
+      margin-bottom: 20px
+      font-weight: 300
+      letter-spacing: 0
+      line-height: 1.5
