@@ -1,0 +1,89 @@
+.hnbutton
+{
+  display: block !important;
+  line-height: 1.0;
+}
+
+.btn-hn1
+{ height: 20px !important;
+  font-size: 9px;
+  padding: 1px 6px;
+  margin: 0px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  color: #888;
+  cursor: pointer;
+  text-shadow: none;
+  border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+}
+
+.hnbutton:hover .btn-hn1
+{ height: 20px!important;
+  font-size: 9px;
+  padding: 1px 6px;
+  margin: 0px;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffc69e;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffc69e;
+  box-shadow:inset 0px 1px 0px 0px #ffc69e;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff944c), color-stop(1, #ff5e00) );
+  background:-moz-linear-gradient( center top, #ff944c 5%, #ff5e00 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff944c', endColorstr='#ff5e00');
+  background-color:#ff944c;
+  border:1px solid #e66a05;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: none;
+  border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+}
+
+.btn-hn2
+{ border-left: 0px!important;
+  height: 20px!important;
+  position:relative;
+  left:-4px;
+  top:0px;
+  font-size: 10px;
+  font-family:Lucida Grande;
+  padding: 1px 6px;
+  margin: 0px;
+  background-color: transparent;
+  color: #888;
+  text-shadow: none;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+.btn-hn2:hover
+{ color: #ff6600;
+  border: 1px solid #ccc;
+}
+
+.btn-hn2:active
+{ color: #ffa366;
+  border: 1px solid #ccc;
+}
